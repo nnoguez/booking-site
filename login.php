@@ -22,9 +22,9 @@
                 <a class='back' href='index.php'><h3>⬅︎</h3></a>
                 <h2> Log In </h2>
                 <form method="POST">
-                    <input type="username" name="username" placeholder="username"/>
+                    <input type="email" name="email" placeholder="Email"/>
                     <br>
-                    <input type="password" name="password" placeholder="Enter a Password"/>
+                    <input type="password" name="password" placeholder="Password"/>
                     <br>
                     <input class="button" type="submit" name="submit" value="Log in"/>
                 </form>

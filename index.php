@@ -18,7 +18,7 @@
                 } else {
                     echo("
                         <div>
-                            <h3>It seems as if you're not logged in. Would you like to:</h3>
+                            <h2>It seems as if you're not logged in. Would you like to:</h2>
                             <br>
                             <div class='box-item'>
                                 <a href='signup.php'><button class='button'>Sign Up</button></a>

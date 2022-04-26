@@ -19,14 +19,14 @@
             <?php
             } else {
             ?>
-                <a href='index.php'>⬅︎</a>
+                <a class='back' href='index.php'><h3>⬅︎</h3></a>
                 <h2> Log In </h2>
                 <form method="POST">
                     <input type="username" name="username" placeholder="Email"/>
                     <br>
                     <input type="password" name="password" placeholder="Enter a Password"/>
                     <br>
-                    <input class="button" type="submit" name="submit" value="submit"/>
+                    <input class="button" type="submit" name="submit" value="Log in"/>
                 </form>
             <?php
                     if(isset($_POST['submit'])) {

@@ -7,12 +7,12 @@
         
         // Validate
         // username and password true, newPassword no
-        if((isset($_POST["username"]) and isset($_POST["password"])) and (!isset($_POST["newPassword"]))) {
+        if((isset($_POST["username"]) and isset($_POST["password"]))) {
             $status = true;
         }
         
         // username, password, and newPassword true
-        if(isset($_POST["username"]) and isset($_POST["password"]) and isset($_POST["newPassword"])) {
+        if(isset($_POST["username"]) and isset($_POST["password"])) {
             $status = true;
         }
 
@@ -72,14 +72,12 @@
         $result = [
             "username" => null,
             "password" => null,
-            "newPassword" => null
         ];
 
         if(security_validate()) {
             // After validation, sanitize text input.
             $result["username"] = htmlspecialchars($_POST["username"]);
             $result["password"] = htmlspecialchars($_POST["password"]);
-            $result["newPassword"] = htmlspecialchars($_POST["newPassword"]);
         }
 
         // Return array

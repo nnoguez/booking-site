@@ -17,11 +17,11 @@
         $database = "lab";
 
         if($connection == null) {
-            $connection = mysqli_connect($server, $username, $password, $database);
+            $connection = mysqli_connect($server, $email, $firstName, $lastName, $password, $database);
         }
     }
 
-    function database_addUser($username, $password) {
+    function database_addUser($email, $firstName, $lastName, $password) {
         // Use the global connection
         global $connection;
 
@@ -29,11 +29,11 @@
             // Overwrite the existing password value as a hash
             $password = password_hash($password, PASSWORD_DEFAULT);
             // Insert username and hashed password
-            mysqli_query($connection, "INSERT INTO users (username, password) VALUES ('{$username}', '{$password}');");
+            mysqli_query($connection, "INSERT INTO users (username, password) VALUES ('{$email}', '{$password}');");
         }
     }
 
-    function database_verifyUser($username, $password) {
+    function database_verifyUser($email, $firstName, $lastName, $password) {
         // Use the global connection
         global $connection;
 
@@ -42,7 +42,7 @@
 
         if($connection != null) {
             // Use WHERE expressions to look for username
-            $results = mysqli_query($connection, "SELECT password FROM users WHERE username = '{$username}';");
+            $results = mysqli_query($connection, "SELECT password FROM users WHERE username = '{$email}';");
             
             // mysqli_fetch_assoc() returns either null or row data
             $row = mysqli_fetch_assoc($results);
@@ -69,7 +69,7 @@
     }
 
     // starting lab 10 changes 
-    function database_deleteUser($username, $password) {
+    function database_deleteUser($email, $password) {
         // Use the global connection
         global $connection;
         // Open connection.
@@ -80,8 +80,8 @@
             // should accept a username and password
         if($connection != null) {
             // if the user exists, remove the row from the table users
-            if( database_verifyUser($username, $password)) {
-                mysqli_query($connection, "DELETE FROM users WHERE username = '{$username}';");
+            if( database_verifyUser($email, $firstName, $lastName, $password)) {
+                mysqli_query($connection, "DELETE FROM users WHERE username = '{$email}';");
             }
             // Close connection.
             database_close();
@@ -89,7 +89,7 @@
     }
 
 
-    function database_updatePassword($username, $password, $newPassword) {
+    function database_updatePassword($email, $password, $newPassword) {
         // Use the global connection
         global $connection;
 
@@ -101,10 +101,10 @@
         if($connection != null) {
             // if the user exists, update the saved password hash in the table users
             // UPDATE users SET password = "new password" WHERE username = $username;
-            if(database_verifyUser($username, $password)) {
+            if(database_verifyUser($email, $password)) {
                 // $newPasswordText = $_POST['newPassword'];
                 $newPassword = password_hash($newPassword, PASSWORD_DEFAULT);
-                mysqli_query($connection, "UPDATE users SET password = '{$newPassword}' WHERE username = '{$username}';");
+                mysqli_query($connection, "UPDATE users SET password = '{$newPassword}' WHERE username = '{$email}';");
             }
             // Close connection.
             // database_close();

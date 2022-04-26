@@ -19,6 +19,24 @@
         return $status;
     }
 
+    function security_login() {
+        // Set a default value
+        $status = false;
+        // Validate and sanitize
+        $result = security_sanitize();
+        // Open connection
+        database_connect();
+        // Use the connection
+        $status = database_verifyUser($result["username"], $result["password"]);
+        // Close connection
+        database_close();
+        // Check status
+        if($status) {
+            // Set a cookie
+            setcookie("login", "yes");
+        }
+    }
+
     function security_addNewUser() {
         // Validate and sanitize.
         $result = security_sanitize();
@@ -37,6 +55,16 @@
         
         // Close connection.
         database_close();
+    }
+
+    function security_loggedIn() {
+        // Does a cookie exist?
+        return isset($_COOKIE["login"]);
+    }
+
+    function security_logout() {
+        // Set a cookie to the past
+        setcookie("login", "yes", time() - 10);
     }
 
     function security_sanitize() {

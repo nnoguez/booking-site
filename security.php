@@ -74,16 +74,16 @@
             "firstName" => null,
             "lastName" => null,
             "password" => null,
-            "newPassword" => null
+            // "newPassword" => null
         ];
 
         if(security_validate()) {
             // After validation, sanitize text input.
-            $result["username"] = htmlspecialchars($_POST["username"]);
+            $result["email"] = htmlspecialchars($_POST["email"]);
             $result["firstName"] = htmlspecialchars($_POST["firstName"]);
             $result["lastName"] = htmlspecialchars($_POST["lastName"]);
             $result["password"] = htmlspecialchars($_POST["password"]);
-            $result["newPassword"] = htmlspecialchars($_POST["newPassword"]);
+            // $result["newPassword"] = htmlspecialchars($_POST["newPassword"]);
         }
 
         // Return array

@@ -10,6 +10,6 @@ CREATE TABLE `users` (
   PRIMARY KEY(`id`)
 );
 
-INSERT INTO `users` (`id`, `username`, `password`) VALUES
-(1, 'nora.hills', '$2y$10$jhSIk2N5BnkEEzgEBWQDw.AUQIEcrH8V0AcNLfW2nkjTAH2WgAAlW');
+INSERT INTO `users` (`id`, `email`, `firstName`, `lastName`, `password`) VALUES
+(1, 'nora.hills@gmail.com', `nora`, `hills`, '$2y$10$jhSIk2N5BnkEEzgEBWQDw.AUQIEcrH8V0AcNLfW2nkjTAH2WgAAlW');
 

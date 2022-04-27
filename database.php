@@ -17,7 +17,7 @@
         $database = "booking";
 
         if($connection == null) {
-            $connection = mysqli_connect($server, $username, $firstName, $password, $database);
+            $connection = mysqli_connect($server, $username, $password, $database);
         }
     }
 
@@ -42,7 +42,7 @@
 
         if($connection != null) {
             // Use WHERE expressions to look for username
-            $results = mysqli_query($connection, "SELECT password FROM users WHERE username = '{$username}';");
+            $results = mysqli_query($connection, "SELECT `username`, `firstName`, `password` FROM `users`");
             
             // mysqli_fetch_assoc() returns either null or row data
             $row = mysqli_fetch_assoc($results);

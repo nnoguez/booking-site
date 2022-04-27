@@ -57,3 +57,22 @@ input {
     margin-bottom: 5px;
 }
 
+* {
+    box-sizing: border-box;
+  }
+  
+  .column-left {
+    float: left;
+    width: 90%;
+    padding: 10px;
+  }
+  
+  .column-right {
+    float: right;
+    width: 10%;
+    padding: 10px;
+    text-align: center; 
+    margin-top: 10px
+  }
+  
+  

@@ -21,7 +21,17 @@
             ?>
                 <a class='back' href='index.php'><h3>⬅︎</h3></a>
                 
-                <div class="column-left">
+                <div class="row">
+                <div class="column left">
+                    <h2>Tokyo, Japan</h2>
+                </div>
+                <div class="column right">
+                    <button>Book Flight</button>
+                </div>
+                </div>
+
+
+                <!-- <div class="column-left">
                     <h3>Tokyo, Japan</h3>
                 </div>
                 <div class="column-right">
@@ -80,7 +90,7 @@
                 </div>
                 <div class="column-right">
                     <button>Book Flight</button>
-                </div>
+                </div> -->
             <?php
                 if(isset($_POST['submit'])) {
                     security_addNewUser();

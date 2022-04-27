@@ -22,11 +22,11 @@
                 <a class='back' href='index.php'><h3>⬅︎</h3></a>
                 <h2> Sign Up </h2>
                 <form method="POST">
-                    <input type="username" name="email" placeholder="Email Address"/>
+                    <input type="email" name="email" placeholder="Email Address"/>
                     <br>
-                    <input type="text" name="firstName" placeholder="First Name"/>
+                    <input type="firstName" name="firstName" placeholder="First Name"/>
                     <br>
-                    <input type="text" name="lastName" placeholder="Last Name"/>
+                    <input type="lastName" name="lastName" placeholder="Last Name"/>
                     <br>
                     <input type="password" name="password" placeholder="Password"/>
                     <br>

@@ -14,14 +14,14 @@
         //  the password is an empty string.
         $password = "root";
         // Database
-        $database = "booking";
+        $database = "lab";
 
         if($connection == null) {
-            $connection = mysqli_connect($server, $username, $firstName, $lastName, $password, $database);
+            $connection = mysqli_connect($server, $username, $password, $database);
         }
     }
 
-    function database_addUser($username, $firstName, $lastName, $password) {
+    function database_addUser($username, $password) {
         // Use the global connection
         global $connection;
 
@@ -29,11 +29,11 @@
             // Overwrite the existing password value as a hash
             $password = password_hash($password, PASSWORD_DEFAULT);
             // Insert username and hashed password
-            mysqli_query($connection, "INSERT INTO users (username, firstName, lastName, password) VALUES ('{$username}', '{$firstName}', '{$lastName}', '{$password}');");
+            mysqli_query($connection, "INSERT INTO users (username, password) VALUES ('{$username}', '{$password}');");
         }
     }
 
-    function database_verifyUser($username, $firstName, $lastName, $password) {
+    function database_verifyUser($username, $password) {
         // Use the global connection
         global $connection;
 
@@ -69,7 +69,7 @@
     }
 
     // starting lab 10 changes 
-    function database_deleteUser($username, $firstName, $lastName, $password) {
+    function database_deleteUser($username, $password) {
         // Use the global connection
         global $connection;
         // Open connection.
@@ -80,7 +80,7 @@
             // should accept a username and password
         if($connection != null) {
             // if the user exists, remove the row from the table users
-            if( database_verifyUser($username, $firstName, $lastName, $password)) {
+            if( database_verifyUser($username, $password)) {
                 mysqli_query($connection, "DELETE FROM users WHERE username = '{$username}';");
             }
             // Close connection.
@@ -89,7 +89,7 @@
     }
 
 
-    function database_updatePassword($username, $firstName, $lastName, $password, $newPassword) {
+    function database_updatePassword($username, $password, $newPassword) {
         // Use the global connection
         global $connection;
 
@@ -101,7 +101,7 @@
         if($connection != null) {
             // if the user exists, update the saved password hash in the table users
             // UPDATE users SET password = "new password" WHERE username = $username;
-            if(database_verifyUser($username, $firstName, $lastName, $password)) {
+            if(database_verifyUser($username, $password)) {
                 // $newPasswordText = $_POST['newPassword'];
                 $newPassword = password_hash($newPassword, PASSWORD_DEFAULT);
                 mysqli_query($connection, "UPDATE users SET password = '{$newPassword}' WHERE username = '{$username}';");

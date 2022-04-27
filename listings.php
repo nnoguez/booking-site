@@ -28,6 +28,12 @@
                 <div class="column right">
                     <button>Book Flight</button>
                 </div>
+                <div class="column left">
+                    <h2>Tokyo, Japan</h2>
+                </div>
+                <div class="column right">
+                    <button>Book Flight</button>
+                </div>
                 </div>
 
 

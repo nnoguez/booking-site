@@ -7,12 +7,12 @@
         
         // Validate
         // username and password true, newPassword no
-        if((isset($_POST["username"]) and isset($_POST["password"])) and (!isset($_POST["newPassword"]))) {
+        if((isset($_POST["username"]) and isset($_POST["firstName"]) and isset($_POST["lastName"]) and isset($_POST["password"])) and (!isset($_POST["newPassword"]))) {
             $status = true;
         }
         
         // username, password, and newPassword true
-        if(isset($_POST["username"]) and isset($_POST["password"]) and isset($_POST["newPassword"])) {
+        if(isset($_POST["username"]) and isset($_POST["firstName"]) and isset($_POST["lastName"]) and isset($_POST["password"]) and isset($_POST["newPassword"])) {
             $status = true;
         }
 
@@ -27,7 +27,7 @@
         // Open connection
         database_connect();
         // Use the connection
-        $status = database_verifyUser($result["username"], $result["password"]);
+        $status = database_verifyUser($result["username"], $result["firstName"], $result["lastName"], $result["password"]);
         // Close connection
         database_close();
         // Check status
@@ -47,10 +47,10 @@
         //
         // We want to make sure we don't add
         //  duplicate values.
-        if(!database_verifyUser($result["username"], $result["password"])) {
+        if(!database_verifyUser($result["username"], $result["firstName"], $result["lastName"], $result["password"])) {
             // Username does not exist.
             // Add a new one.
-            database_addUser($result["username"], $result["password"]);
+            database_addUser($result["username"], $result["firstName"], $result["lastName"], $result["password"]);
         }
         
         // Close connection.
@@ -71,6 +71,8 @@
         // Create an array of keys username and password
         $result = [
             "username" => null,
+            "firstName" => null,
+            "lastName" => null,
             "password" => null,
             "newPassword" => null
         ];
@@ -78,6 +80,8 @@
         if(security_validate()) {
             // After validation, sanitize text input.
             $result["username"] = htmlspecialchars($_POST["username"]);
+            $result["firstName"] = htmlspecialchars($_POST["firstName"]);
+            $result["lastName"] = htmlspecialchars($_POST["lastName"]);
             $result["password"] = htmlspecialchars($_POST["password"]);
             $result["newPassword"] = htmlspecialchars($_POST["newPassword"]);
         }
@@ -93,7 +97,7 @@
         // Open connection.
         database_connect();
         // Use connection.
-            database_deleteUser($result["username"], $result["password"]);
+            database_deleteUser($result["username"], $result["firstName"], $result["lastName"], $result["password"]);
         // Close connection.
         database_close();
     }
@@ -107,7 +111,7 @@
         // Use connection.
             // Username does not exist.
             // Add a new one.
-            database_updatePassword($result["username"],  $result["password"], $result["newPassword"]);
+            database_updatePassword($result["username"], $result["firstName"], $result["lastName"], $result["password"], $result["newPassword"]);
         // Close connection.
         database_close();
     }

@@ -14,7 +14,7 @@
         //  the password is an empty string.
         $password = "root";
         // Database
-        $database = "lab";
+        $database = "booking";
 
         if($connection == null) {
             $connection = mysqli_connect($server, $username, $password, $database);

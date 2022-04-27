@@ -17,23 +17,23 @@
         $database = "booking";
 
         if($connection == null) {
-            $connection = mysqli_connect($server, $email, $password, $database);
+            $connection = mysqli_connect($server, $username, $password, $database);
         }
     }
 
-    function database_addUser($email, $password) {
+    function database_addUser($username, $password) {
         // Use the global connection
         global $connection;
 
         if($connection != null) {
             // Overwrite the existing password value as a hash
             $password = password_hash($password, PASSWORD_DEFAULT);
-            // Insert email and hashed password
-            mysqli_query($connection, "INSERT INTO users (email, password) VALUES ('{$email}', '{$password}');");
+            // Insert username and hashed password
+            mysqli_query($connection, "INSERT INTO users (username, password) VALUES ('{$username}', '{$password}');");
         }
     }
 
-    function database_verifyUser($email, $password) {
+    function database_verifyUser($username, $password) {
         // Use the global connection
         global $connection;
 
@@ -41,8 +41,8 @@
         $status = false;
 
         if($connection != null) {
-            // Use WHERE expressions to look for email
-            $results = mysqli_query($connection, "SELECT password FROM users WHERE username = '{$email}';");
+            // Use WHERE expressions to look for username
+            $results = mysqli_query($connection, "SELECT password FROM users WHERE username = '{$username}';");
             
             // mysqli_fetch_assoc() returns either null or row data
             $row = mysqli_fetch_assoc($results);
@@ -65,6 +65,26 @@
 
         if($connection != null) {
             mysqli_close($connection);
+        }
+    }
+
+    // starting lab 10 changes 
+    function database_deleteUser($username, $password) {
+        // Use the global connection
+        global $connection;
+        // Open connection.
+        database_connect();
+        // verify the user exists before changing any data
+        // database_verifyUser($username, $password);
+            // communicate with the database server
+            // should accept a username and password
+        if($connection != null) {
+            // if the user exists, remove the row from the table users
+            if( database_verifyUser($username, $password)) {
+                mysqli_query($connection, "DELETE FROM users WHERE username = '{$username}';");
+            }
+            // Close connection.
+            database_close();
         }
     }
 ?>

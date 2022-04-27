@@ -50,7 +50,7 @@
         if(!database_verifyUser($result["username"], $result["password"])) {
             // Username does not exist.
             // Add a new one.
-            database_addUser($result["username"], $result["firstName"], $result["password"]);
+            database_addUser($result["username"], $result["password"]);
         }
         
         // Close connection.
@@ -72,7 +72,6 @@
         $result = [
             "username" => null,
             "password" => null,
-            "firstName" => null,
             "newPassword" => null
         ];
 
@@ -80,12 +79,13 @@
             // After validation, sanitize text input.
             $result["username"] = htmlspecialchars($_POST["username"]);
             $result["password"] = htmlspecialchars($_POST["password"]);
-            $result["firstName"] = htmlspecialchars($_POST["firstName"]);
             $result["newPassword"] = htmlspecialchars($_POST["newPassword"]);
         }
 
         // Return array
         return $result;
     }
+
+
 ?>
 

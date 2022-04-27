@@ -23,8 +23,8 @@
                 <h2> Sign Up </h2>
                 <form method="POST">
                     <input type="username" name="username" placeholder="Username"/>
-                    <br>
-                    <input type="firstName" name="firstName" placeholder="First Name"/>
+                    <!-- <br>
+                    <input type="firstName" name="firstName" placeholder="First Name"/> -->
                     <br><!--
                     <input type="lastName" name="lastName" placeholder="Last Name"/>
                     <br> -->

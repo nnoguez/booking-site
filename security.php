@@ -68,7 +68,7 @@
     }
 
     function security_sanitize() {
-        // Create an array of keys username and password
+        // Create an array of keys email and password
         $result = [
             "email" => null,
             "password" => null,

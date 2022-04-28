@@ -42,7 +42,7 @@
 
         if($connection != null) {
             // Use WHERE expressions to look for username
-            $results = mysqli_query($connection, "SELECT password FROM users WHERE firstName = '{$firstName}';");
+            $results = mysqli_query($connection, "SELECT password FROM users;");
             
             // mysqli_fetch_assoc() returns either null or row data
             $row = mysqli_fetch_assoc($results);

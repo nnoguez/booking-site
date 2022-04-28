@@ -17,11 +17,11 @@
         $database = "booking";
 
         if($connection == null) {
-            $connection = mysqli_connect($server, $username, $firstName, $password, $database);
+            $connection = mysqli_connect($server, $username, $password, $database);
         }
     }
 
-    function database_addUser($username, $firstName, $password) {
+    function database_addUser($username, $password) {
         // Use the global connection
         global $connection;
 
@@ -29,7 +29,7 @@
             // Overwrite the existing password value as a hash
             $password = password_hash($password, PASSWORD_DEFAULT);
             // Insert username and hashed password
-            mysqli_query($connection, "INSERT INTO users (username, firstName, password) VALUES ('{$username}', '{$password}');");
+            mysqli_query($connection, "INSERT INTO users (username, password) VALUES ('{$username}', '{$password}');");
         }
     }
 

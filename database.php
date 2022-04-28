@@ -33,7 +33,7 @@
         }
     }
 
-    function database_verifyUser($username, $firstName, $password) {
+    function database_verifyUser($username, $password) {
         // Use the global connection
         global $connection;
 

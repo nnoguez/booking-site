@@ -13,8 +13,6 @@
         // If using XAMPP, 
         //  the password is an empty string.
         $password = "root";
-        $firstName = "root";
-
         // Database
         $database = "booking";
 
@@ -23,7 +21,7 @@
         }
     }
 
-    function database_addUser($username, $firstName, $password) {
+    function database_addUser($username, $password) {
         // Use the global connection
         global $connection;
 
@@ -31,11 +29,11 @@
             // Overwrite the existing password value as a hash
             $password = password_hash($password, PASSWORD_DEFAULT);
             // Insert username and hashed password
-            mysqli_query($connection, "INSERT INTO users (username, firstName, password) VALUES ('{$username}', '{$firstName}','{$password}');");
+            mysqli_query($connection, "INSERT INTO users (username, password) VALUES ('{$username}', '{$password}');");
         }
     }
 
-    function database_verifyUser($username, $firstName, $password) {
+    function database_verifyUser($username, $password) {
         // Use the global connection
         global $connection;
 

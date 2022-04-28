@@ -67,24 +67,24 @@
         setcookie("login", "yes", time() - 10);
     }
 
-    // function security_sanitize() {
-    //     // Create an array of keys username and password
-    //     $result = [
-    //         "username" => null,
-    //         "password" => null,
-    //         "newPassword" => null
-    //     ];
+    function security_sanitize() {
+        // Create an array of keys username and password
+        $result = [
+            "username" => null,
+            "password" => null,
+            "newPassword" => null
+        ];
 
-    //     if(security_validate()) {
-    //         // After validation, sanitize text input.
-    //         $result["username"] = htmlspecialchars($_POST["username"]);
-    //         $result["password"] = htmlspecialchars($_POST["password"]);
-    //         $result["newPassword"] = htmlspecialchars($_POST["newPassword"]);
-    //     }
+        if(security_validate()) {
+            // After validation, sanitize text input.
+            $result["username"] = htmlspecialchars($_POST["username"]);
+            $result["password"] = htmlspecialchars($_POST["password"]);
+            $result["newPassword"] = htmlspecialchars($_POST["newPassword"]);
+        }
 
-    //     // Return array
-    //     return $result;
-    // }
+        // Return array
+        return $result;
+    }
 
     // // starting lab 10 changes 
     // function security_deleteUser() {

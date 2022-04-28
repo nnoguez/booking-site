@@ -23,7 +23,7 @@
         }
     }
 
-    function database_addUser($firstName, $password) {
+    function database_addUser($firstName, $username, $password) {
         // Use the global connection
         global $connection;
 
@@ -31,11 +31,11 @@
             // Overwrite the existing password value as a hash
             $password = password_hash($password, PASSWORD_DEFAULT);
             // Insert username and hashed password
-            mysqli_query($connection, "INSERT INTO users (firstName, password) VALUES ('{$firstName}', '{$password}');");
+            mysqli_query($connection, "INSERT INTO users (firstName, username, password) VALUES ('{$firstName}', '{$firstName}', '{$password}');");
         }
     }
 
-    function database_verifyUser($firstName, $password) {
+    function database_verifyUser($firstName, $username, $password) {
         // Use the global connection
         global $connection;
 

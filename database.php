@@ -19,7 +19,7 @@
         $database = "booking";
 
         if($connection == null) {
-            $connection = mysqli_connect($server, $firstName, $password, $database);
+            $connection = mysqli_connect($server, $firstName, $username, $password, $database);
         }
     }
 

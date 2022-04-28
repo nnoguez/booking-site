@@ -33,7 +33,7 @@
         }
     }
 
-    function database_verifyUser($username, $firstName, $password) {
+    function database_verifyUser($username, $password) {
         // Use the global connection
         global $connection;
 
@@ -42,7 +42,7 @@
 
         if($connection != null) {
             // Use WHERE expressions to look for username
-            $results = mysqli_query($connection, "SELECT password FROM users WHERE username = '{$username}' AND firstName = '{$firstName}';");
+            $results = mysqli_query($connection, "SELECT password FROM users WHERE username = '{$username}';");
             
             // mysqli_fetch_assoc() returns either null or row data
             $row = mysqli_fetch_assoc($results);

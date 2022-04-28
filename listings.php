@@ -23,37 +23,37 @@
                 
                 <div class="row">
                     <div class="column left">
-                        <h2>Tokyo, Japan</h2>
+                        <p>Tokyo, Japan</p>
                     </div>
                     <div class="column right">
                         <button>Book Flight</button>
                     </div>
                     <div class="column left">
-                        <h2>Sydney, Australia</h2>
+                        <p>Sydney, Australia</p>
                     </div>
                     <div class="column right">
                         <button>Book Flight</button>
                     </div>
                     <div class="column left">
-                        <h2>Toronto, Canada</h2>
+                        <p>Toronto, Canada</p>
                     </div>
                     <div class="column right">
                         <button>Book Flight</button>
                     </div>
                     <div class="column left">
-                        <h2>Paris, France</h2>
+                        <p>Paris, France</p>
                     </div>
                     <div class="column right">
                         <button>Book Flight</button>
                     </div>
                     <div class="column left">
-                        <h2>Santiago, Chile</h2>
+                        <p>Santiago, Chile</p>
                     </div>
                     <div class="column right">
                         <button>Book Flight</button>
                     </div>
                     <div class="column left">
-                        <h2>Seoul, South Korea</h2>
+                        <p>Seoul, South Korea</p>
                     </div>
                     <div class="column right">
                         <button>Book Flight</button>

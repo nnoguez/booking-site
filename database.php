@@ -10,7 +10,7 @@
         $server = "localhost";
         // Username
         $firstName = "root";
-        // $username = "root";
+        $username = "root";
 
         // If using XAMPP, 
         //  the password is an empty string.

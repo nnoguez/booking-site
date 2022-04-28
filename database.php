@@ -10,8 +10,6 @@
         $server = "localhost";
         // Username
         $username = "root";
-        $firstName = "root";
-
         // If using XAMPP, 
         //  the password is an empty string.
         $password = "root";
@@ -19,11 +17,11 @@
         $database = "booking";
 
         if($connection == null) {
-            $connection = mysqli_connect($server, $username, $firstName, $password, $database);
+            $connection = mysqli_connect($server, $username, $password, $database);
         }
     }
 
-    function database_addUser($username, $firstName, $password) {
+    function database_addUser($username, $password) {
         // Use the global connection
         global $connection;
 
@@ -31,11 +29,11 @@
             // Overwrite the existing password value as a hash
             $password = password_hash($password, PASSWORD_DEFAULT);
             // Insert username and hashed password
-            mysqli_query($connection, "INSERT INTO users (username, firstName, password) VALUES ('{$username}', '{$firstName}', '{$password}');");
+            mysqli_query($connection, "INSERT INTO users (username, password) VALUES ('{$username}', '{$password}');");
         }
     }
 
-    function database_verifyUser($username, $firstName, $password) {
+    function database_verifyUser($username, $password) {
         // Use the global connection
         global $connection;
 
@@ -44,7 +42,7 @@
 
         if($connection != null) {
             // Use WHERE expressions to look for username
-            $results = mysqli_query($connection, "SELECT password FROM users WHERE username = '{$username}' AND firstName = '{$firstName}';");
+            $results = mysqli_query($connection, "SELECT password FROM users WHERE username = '{$username}';");
             
             // mysqli_fetch_assoc() returns either null or row data
             $row = mysqli_fetch_assoc($results);

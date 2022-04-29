@@ -12,6 +12,9 @@
                 height: 100%;
                 background-repeat: no-repeat;
                 background-size: cover;
+            }
+
+            #header-img {
                 align-items: center;
                 text-align: center;
             }
@@ -22,8 +25,8 @@
             <h1> MCO e-Ticket Booking ✈ </h1>
         </div>
 
-        <!-- <div id="header-img"> -->
+        <div id="header-img">
             <a href='index.php'><button class='button'>Enter</button></a>  
-        <!-- </div> -->
+        </div>
     </body>
 </html>

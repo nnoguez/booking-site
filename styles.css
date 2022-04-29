@@ -54,6 +54,10 @@ ul {
         font-size: large;
     }
 
+.nav-hover:hover {
+    color:rgb(52, 84, 153);
+}
+
   .active {
     background-color: rgb(65, 106, 217)
   }

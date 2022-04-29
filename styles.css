@@ -49,10 +49,10 @@ ul {
       color: grey;
       padding-top: 20px;
   }
-    /* a:hover {
+    .a-par:hover {
         color:rgb(52, 84, 153);
         font-size: large;
-    } */
+    }
 
   .active {
     background-color: rgb(65, 106, 217)

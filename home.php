@@ -6,21 +6,14 @@
         <title> Portfolio 2 </title>
         <link rel="stylesheet" href="styles.css">
         <style>
-            body {
+            #header-img {
                 background-image: url('img/bg.jpg');
                 width: 100%;
                 height: 100%;
                 background-repeat: no-repeat;
                 background-size: cover;
-            }
-
-            #header-img {
                 align-items: center;
                 text-align: center;
-                width: 100%;
-                height: 100%;
-                background-repeat: no-repeat;
-                background-size: cover;
             }
         </style>
     </head>

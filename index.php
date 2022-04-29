@@ -26,12 +26,12 @@
                 color: white;
                 padding: 15px 30px 15px 30px;
                 border-radius: 12px;
-                font-size: 30px;
+                font-size: 27px;
                 border: 2px solid white;
             }
             
             .buttonTrans:hover {
-                font-size: 33px;
+                font-size: 30px;
                 padding: 15px 30px 15px 30px;
             }
         </style>

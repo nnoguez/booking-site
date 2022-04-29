@@ -20,23 +20,25 @@
             <li style="float:right"><a href="logout.php">Log Out</a></li>
         </ul>
         <h1> Delete User </h1>
-        <?php  
-            if(security_loggedIn()) { ?>
-                <form method="POST">
-                <input type="username" name="username" placeholder="Enter a Username"/>
-                <input type="password" name="password" placeholder="Enter a Password"/>
-                <input type="submit" name="submit" value="submit"/>
-                </form>
-        <?php
-                if(isset($_POST['submit'])) {
-                    security_deleteUser();
-                    echo ("User deleted.");
+        <div class="box">
+            <?php  
+                if(security_loggedIn()) { ?>
+                    <form method="POST">
+                    <input type="username" name="username" placeholder="Enter a Username"/>
+                    <input type="password" name="password" placeholder="Enter a Password"/>
+                    <input type="submit" name="submit" value="submit"/>
+                    </form>
+            <?php
+                    if(isset($_POST['submit'])) {
+                        security_deleteUser();
+                        echo ("User deleted.");
+                    }
+                } else { 
+                    echo("You currently don't have an account in our database.<br>");  
+                    echo("<a href='signup.php'>Sign Up</a>"); 
                 }
-            } else { 
-                echo("You currently don't have an account in our database.<br>");  
-                echo("<a href='signup.php'>Sign Up</a>"); 
-            }
-        ?>
+            ?>
+        </div>
     </body>
 </html>
 

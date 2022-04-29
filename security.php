@@ -71,7 +71,7 @@
         // Create an array of keys username and password
         $result = [
             "username" => null,
-            // "firstName" => null,
+            "firstName" => null,
             "password" => null,
             "newPassword" => null
         ];

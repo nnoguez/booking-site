@@ -27,7 +27,7 @@
                     <br>
                     <input type="password" name="newPassword" placeholder="Enter New Password"/>
                     <br>
-                    <input type="submit" name="submit" value="submit"/>
+                    <input class="button" type="submit" name="submit" value="submit"/>
                     </form>
                 <?php  
                     if(isset($_POST['submit'])) {

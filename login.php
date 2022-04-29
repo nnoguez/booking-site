@@ -22,6 +22,7 @@
                     You are already logged in. 
                     <br>
                     <a href='home.php'>Return Home</a>
+                    <a href='logout.php'>Log Out</a>
                     "); 
             ?>
             <?php

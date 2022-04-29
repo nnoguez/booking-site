@@ -14,8 +14,7 @@
             <?php
                 if(security_loggedIn()) { 
             ?>
-                <div class="box">
-                    <h2> Flight Listings </h2>
+                    <h2> Profile </h2>
                     <br>
                     <a href='update.php'>Update Password</a>
                     <br>
@@ -23,7 +22,6 @@
                     <br> 
                     <a href='logout.php'>Log Out</a>
 
-                </div>
             <?php
                 } else {
                     echo("

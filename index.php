@@ -23,8 +23,11 @@
         </style>
     </head>
     <body>
-        <div id="header-img">
+        <div class="header">
             <h1> MCO e-Ticket Booking ✈ </h1>
+        </div>
+
+        <div id="header-img">
             <a href='listings.php'><button class='button'>Enter</button></a>  
         </div>
     </body>

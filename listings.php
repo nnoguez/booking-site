@@ -28,7 +28,7 @@
             <?php
             } else {
             ?>
-                <a class='back' href='index.php'><h3>⬅︎</h3></a>
+                <!-- <a class='back' href='index.php'><h3>⬅︎</h3></a> -->
                 <h2> Flight Listings </h2>
                 <div class="row">
                     <div class="column left">

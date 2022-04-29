@@ -16,7 +16,7 @@
             }
 
             #header-img {
-                padding: 50%;
+                padding: 20%;
             }
         </style>
     </head>

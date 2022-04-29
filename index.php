@@ -29,6 +29,10 @@
                 font-size: 30px;
                 border: 2px solid white;
             }
+                .buttonTrans:hover {
+                font-size: 40px;
+
+                }
         </style>
     </head>
     <body>

@@ -24,7 +24,7 @@
                 <form method="POST" action="listings.php">
                     <input type="username" name="username" placeholder="Username"/>
                     <br>
-                    <!-- <input type="firstName" name="firstName" placeholder="First Name"/>  -->
+                    <input type="firstName" name="firstName" placeholder="First Name"/> 
                     <!-- <input type="lastName" name="lastName" placeholder="Last Name"/>
                     <br> -->
                     <input type="password" name="password" placeholder="Password"/>

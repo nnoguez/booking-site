@@ -30,8 +30,8 @@
         if($connection != null) {
             // Overwrite the existing password value as a hash
             $password = password_hash($password, PASSWORD_DEFAULT);
-            // Insert username and hashed password
-            mysqli_query($connection, "INSERT INTO users (username, firstName, password) VALUES ('{$username}', '{$firstName}', '{$password}');");
+            // Insert email and hashed password
+            mysqli_query($connection, "INSERT INTO users (email, firstName, password) VALUES ('{$email}', '{$firstName}', '{$password}');");
         }
     }
 
@@ -43,10 +43,10 @@
         $status = false;
 
         if($connection != null) {
-            // Use WHERE expressions to look for username
-            $results = mysqli_query($connection, "SELECT password FROM users WHERE username = '{$username}' AND firstName = '{$firstName}';");
+            // Use WHERE expressions to look for email
+            $results = mysqli_query($connection, "SELECT password FROM users WHERE email = '{$email}' AND firstName = '{$firstName}';");
             // tried this but took out the WHERE for testing purposes
-            // "SELECT password FROM users WHERE username = '{$username}' AND firstName = '{$firstName}';"
+            // "SELECT password FROM users WHERE email = '{$email}' AND firstName = '{$firstName}';"
             
             // mysqli_fetch_assoc() returns either null or row data
             $row = mysqli_fetch_assoc($results);

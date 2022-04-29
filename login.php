@@ -19,7 +19,7 @@
             <?php  
                 if(security_loggedIn()) { 
                     echo("
-                    You are already logged in. 
+                    <a href='listings.php'><button class='button'> Go to Site </button></a>
                     <br>
                     <a href='home.php'>Return Home</a>
                     <br>
@@ -46,11 +46,7 @@
                     if(isset($_POST['submit'])) {
                         security_login();
                         security_loggedIn();
-                        echo ("
-                            Logged In
-                            <br>
-                            <a href='listings.php'><button class='button'> Go to Site </button></a>
-                        ");
+                        echo ("Logged In");
                     }
                 }
             ?>

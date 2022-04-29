@@ -18,7 +18,7 @@
             echo("Logged Out"); 
             } else {
             echo("
-                You are already logged out.
+                <h2>You are already logged out.</h2>
                 <br>
                 <a href='home.php'>Return Home</a>
             ");  

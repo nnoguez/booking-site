@@ -24,7 +24,7 @@
             <?php
             } else {
             ?>
-                <a class='back' href='index.php'><h3>⬅︎</h3></a>
+                <a class='back' href='home.php'><h3>⬅︎</h3></a>
                 <h2> Sign Up </h2>
                 <form method="POST">
                     <input type="text" name="username" placeholder="Username"/>

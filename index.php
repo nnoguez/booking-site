@@ -26,8 +26,8 @@
                 color: white;
                 padding: 15px 30px 15px 30px;
                 border-radius: 12px;
-                font-size: 20px;
-                border: 1px solid white;
+                font-size: 30px;
+                border: 2px solid white;
             }
         </style>
     </head>

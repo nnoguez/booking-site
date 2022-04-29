@@ -18,9 +18,9 @@
                             <p> Please select one of the following options:</p>
                             <br>
                             <div class='box-item'>
-                                <a href='signup.php'><button class='button'>Sign Up</button></a>
+                                <a class='a-par' href='signup.php'><button class='button'>Sign Up</button></a>
                                 <br>
-                                <a href='login.php'><button class='button'>Login</button></a>
+                                <a class='a-par' href='login.php'><button class='button'>Login</button></a>
                             </div>
                         </div>
                     ");  

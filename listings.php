@@ -61,7 +61,7 @@
             <?php
             } else {
                 echo("You are unable to view this page until you sign in.");  
-                echo("<a href='index.php'>Return Home</a><br>"); 
+                echo("<a class='a-par' href='index.php'>Return Home</a><br>"); 
             }
             ?>
         </div>

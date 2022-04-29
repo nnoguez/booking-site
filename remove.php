@@ -34,7 +34,7 @@
                     }
                 } else { 
                     echo("You currently don't have an account in our database.<br>");  
-                    echo("<a href='signup.php'>Sign Up</a>"); 
+                    echo("<a class='a-par' href='signup.php'>Sign Up</a>"); 
                 }
             ?>
         </div>

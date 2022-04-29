@@ -34,12 +34,12 @@
                         security_updatePassword();
                             echo ("Password updated!");
                             // adding this in to redirect user back to login page, thought it would help with navigation
-                            echo("<a href='index.php'>Return Home</a><br>"); 
+                            echo("<a class='a-par' href='index.php'>Return Home</a><br>"); 
                     }
     
                 } else { 
                     echo("You currently don't have an account in our database.<br>");  
-                    echo("<a href='signup.php'>Sign Up</a>"); 
+                    echo("<a class='a-par' href='signup.php'>Sign Up</a>"); 
                 }
             ?>
         </div>

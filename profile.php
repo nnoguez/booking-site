@@ -31,7 +31,7 @@
                     echo("
                         You currently do not have a profile.
                         <br>
-                        <a href='home.php'>Return Home</a>
+                        <a class='a-par' href='home.php'>Return Home</a>
                     ");
                 }
             ?>

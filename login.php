@@ -19,11 +19,11 @@
             <?php  
                 if(security_loggedIn()) { 
                     echo("
-                    <a href='listings.php'><button class='button'> Go to Site </button></a>
+                    <a class='a-par' href='listings.php'><button class='button'> Go to Site </button></a>
                     <br>
-                    <a href='home.php'>Return Home</a>
+                    <a class='a-par' href='home.php'>Return Home</a>
                     <br>
-                    <a href='logout.php'>Log Out</a>
+                    <a class='a-par' href='logout.php'>Log Out</a>
                     "); 
             ?>
             <?php

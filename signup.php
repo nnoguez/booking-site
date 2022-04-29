@@ -21,7 +21,7 @@
                     echo("
                     You are unable to sign up as you are already logged in.
                     <br>
-                    <a href='home.php'>Return Home</a>
+                    <a class='a-par' href='home.php'>Return Home</a>
                     "); 
             ?>
             <?php
@@ -46,9 +46,9 @@
                     echo("
                     Signed Up
                     <br>
-                    <a href='home.php'>Return Home</a>
+                    <a class='a-par' href='home.php'>Return Home</a>
                     <br>
-                    <a href='login.php'>Log In</a>
+                    <a class='a-par' href='login.php'>Log In</a>
                     "); 
                 }
             }

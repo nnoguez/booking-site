@@ -33,7 +33,7 @@
                 </form>
             <?php
                 if(isset($_POST['submit'])) {
-                    security_addNewUser();
+                    database_addNewUser();
                     echo ("Signed Up");
                     echo("<br><a href='index.php'>Return Home</a><br>"); 
                 }

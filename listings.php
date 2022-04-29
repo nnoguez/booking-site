@@ -24,37 +24,37 @@
                         <p>Tokyo, Japan</p>
                     </div>
                     <div class="column right">
-                        <button class="button">Book Flight</button>
+                        <button class="button2">Book Flight</button>
                     </div>
                     <div class="column left">
                         <p>Sydney, Australia</p>
                     </div>
                     <div class="column right">
-                        <button class="button">Book Flight</button>
+                        <button class="button2">Book Flight</button>
                     </div>
                     <div class="column left">
                         <p>Toronto, Canada</p>
                     </div>
                     <div class="column right">
-                        <button class="button">Book Flight</button>
+                        <button class="button2">Book Flight</button>
                     </div>
                     <div class="column left">
                         <p>Paris, France</p>
                     </div>
                     <div class="column right">
-                        <button class="button">Book Flight</button>
+                        <button class="button2">Book Flight</button>
                     </div>
                     <div class="column left">
                         <p>Santiago, Chile</p>
                     </div>
                     <div class="column right">
-                        <button class="button">Book Flight</button>
+                        <button class="button2">Book Flight</button>
                     </div>
                     <div class="column left">
                         <p>Seoul, South Korea</p>
                     </div>
                     <div class="column right">
-                        <button class="button">Book Flight</button>
+                        <button class="button2">Book Flight</button>
                     </div>
                 </div>
             

@@ -103,6 +103,14 @@ h3 {
         background-color: rgb(38, 62, 116);
     }
 
+
+.button2 {
+    background-color: rgb(52, 84, 153);
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 12px;
+    font-size: 10px;
+}
 input {
     padding: 20px;
     margin-bottom: 5px;

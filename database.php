@@ -9,7 +9,7 @@
         // Server
         $server = "localhost";
         // Username
-        $firstName = "root";
+        // $firstName = "root";
         $username = "root";
 
         // If using XAMPP, 
@@ -19,11 +19,11 @@
         $database = "booking";
 
         if($connection == null) {
-            $connection = mysqli_connect($server, $firstName, $password, $database);
+            $connection = mysqli_connect($server, $username, $password, $database);
         }
     }
 
-    function database_addUser($firstName, $password) {
+    function database_addUser($username, $password) {
         // Use the global connection
         global $connection;
 
@@ -31,11 +31,11 @@
             // Overwrite the existing password value as a hash
             $password = password_hash($password, PASSWORD_DEFAULT);
             // Insert username and hashed password
-            mysqli_query($connection, "INSERT INTO users (firstName, password) VALUES ('{$firstName}', '{$password}');");
+            mysqli_query($connection, "INSERT INTO users (username, password) VALUES ('{$username}', '{$password}');");
         }
     }
 
-    function database_verifyUser($firstName, $password) {
+    function database_verifyUser($username, $password) {
         // Use the global connection
         global $connection;
 

@@ -12,6 +12,8 @@
         </div>
 
         <div id="header-img">
+        <img src="img/bg.jpg" alt="bg img limbitless arms" id="landing-img">
+
             <a href='index.php'><button class='button'>Enter</button></a>  
         </div>
     </body>

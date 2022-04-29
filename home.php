@@ -15,7 +15,7 @@
                     echo("
                         <div>
                             <h2>Welcome to MCO e-Ticket Booking</h2>
-                            <h3> Please select one of the following options:</h3>
+                            <p> Please select one of the following options:</p>
                             <br>
                             <div class='box-item'>
                                 <a href='signup.php'><button class='button'>Sign Up</button></a>

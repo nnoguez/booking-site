@@ -23,7 +23,7 @@
         }
     }
 
-    function database_addUser($username, $firstName, $password) {
+    function database_addUser($username, $password) {
         // Use the global connection
         global $connection;
 

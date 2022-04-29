@@ -35,7 +35,6 @@
             <?php
                 if(isset($_POST['submit'])) {
                     security_addNewUser();
-                    echo ("Signed Up");
                     echo("
                     Signed Up
                     <br>

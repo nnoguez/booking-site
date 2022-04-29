@@ -44,6 +44,9 @@ ul {
     background-color: #111;
   } */
   
+  a {
+      text-decoration: none;
+  }
   
   .active {
     background-color: rgb(212, 60, 60);

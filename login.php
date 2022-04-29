@@ -18,8 +18,11 @@
         <div class="box">
             <?php  
                 if(security_loggedIn()) { 
-                    echo("You are already logged in.");  
-                    echo("<a href='hom3.php'>Return Home</a><br>"); 
+                    echo("
+                    You are already logged in. 
+                    <br>
+                    <a href='hom3.php'>Return Home</a>
+                    "); 
             ?>
             <?php
             } else {

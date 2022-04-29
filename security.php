@@ -2,14 +2,11 @@
     include("database.php");
 
     function security_validate() {
-        // Set a default value
-        $status = false;
-        
         // Validate
         
         // username, password, and newPassword true
         if(isset($_POST["username"]) and isset($_POST["password"]) and isset($_POST["firstName"])) {
-            $status = true;
+            $status = false;
         }
 
         return $status;
@@ -25,11 +22,10 @@
         //
         // We want to make sure we don't add
         //  duplicate values.
-        if(!database_verifyUser($result["username"], $result["firstName"], $result["password"])) {
             // Username does not exist.
             // Add a new one.
             database_addUser($result["username"], $result["firstName"], $result["password"]);
-        }
+        
         
         // Close connection.
         database_close();

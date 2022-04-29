@@ -20,6 +20,14 @@
                 margin-right: 45%;
                 margin-top: 20%;
             }
+
+            .buttonTrans {
+                background-color: transparent;
+                color: white;
+                padding: 15px 30px 15px 30px;
+                border-radius: 12px;
+                font-size: 20px;
+            }
         </style>
     </head>
     <body>
@@ -28,7 +36,7 @@
         </div>
 
         <div id="header-img">
-            <a href='listings.php'><button class='button'>Enter</button></a>  
+            <a href='listings.php'><button class='buttonTrans'>Enter</button></a>  
         </div>
     </body>
 </html>

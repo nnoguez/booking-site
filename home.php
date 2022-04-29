@@ -13,12 +13,11 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 align-items: center;
-                text-align: center;
                 margin: 0px;
             }
 
             #header-img {
-                padding: 50px;
+                padding: 100px;
             }
         </style>
     </head>

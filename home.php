@@ -5,7 +5,7 @@
     <head>
         <title> Portfolio 2 </title>
         <link rel="stylesheet" href="styles.css">
-        <style>
+        <!-- <style>
             #header-img {
                 background-image: url('img/bg.jpg');
                 width: 100%;
@@ -15,15 +15,15 @@
                 align-items: center;
                 text-align: center;
             }
-        </style>
+        </style> -->
     </head>
     <body>
         <div class="header">
             <h1> MCO e-Ticket Booking ✈ </h1>
         </div>
 
-        <div id="header-img">
+        <!-- <div id="header-img"> -->
             <a href='index.php'><button class='button'>Enter</button></a>  
-        </div>
+        <!-- </div> -->
     </body>
 </html>

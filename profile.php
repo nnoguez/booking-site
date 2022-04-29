@@ -16,11 +16,11 @@
             ?>
                     <h2> Profile </h2>
                     <br>
-                    <a href='update.php'>Update Password</a>
+                    <a href='update.php'><button class='button'>Update Password</button></a>
                     <br>
-                    <a href='remove.php'>Delete Account</a>
+                    <a href='remove.php'><button class='button'>Delete Account</button></a>
                     <br> 
-                    <a href='logout.php'>Log Out</a>
+                    <a href='logout.php'><button class='button'>Log Out</button></a>
 
             <?php
                 } else {

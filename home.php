@@ -16,7 +16,8 @@
             }
 
             #header-img {
-                margin: 35%;
+                margin-left: 35%;
+                margin-right: 35%;
             }
         </style>
     </head>
@@ -26,7 +27,7 @@
         </div>
 
         <div id="header-img">
-            <a href='index.php'><button class='button'>Enter</button></a>  
+            <a href='listings.php'><button class='button'>Enter</button></a>  
         </div>
     </body>
 </html>

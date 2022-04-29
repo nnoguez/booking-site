@@ -10,7 +10,7 @@
         $server = "localhost";
         // Username
         // $firstName = "root";
-        $email = "root";
+        $username = "root";
 
         // If using XAMPP, 
         //  the password is an empty string.
@@ -19,23 +19,23 @@
         $database = "booking";
 
         if($connection == null) {
-            $connection = mysqli_connect($server, $email, $password, $database);
+            $connection = mysqli_connect($server, $username, $password, $database);
         }
     }
 
-    function database_addUser($email, $firstName, $password) {
+    function database_addUser($username, $firstName, $lastName, $password) {
         // Use the global connection
         global $connection;
 
         if($connection != null) {
             // Overwrite the existing password value as a hash
             $password = password_hash($password, PASSWORD_DEFAULT);
-            // Insert email and hashed password
-            mysqli_query($connection, "INSERT INTO users (email, firstName, password) VALUES ('{$email}', '{$firstName}', '{$password}');");
+            // Insert username and hashed password
+            mysqli_query($connection, "INSERT INTO users (username, firstName, lastName, password) VALUES ('{$username}', '{$firstName}', '{$lastName}', '{$password}');");
         }
     }
 
-    function database_verifyUser($email, $firstName, $password) {
+    function database_verifyUser($username, $firstName, $lastName, $password) {
         // Use the global connection
         global $connection;
 
@@ -43,10 +43,10 @@
         $status = false;
 
         if($connection != null) {
-            // Use WHERE expressions to look for email
+            // Use WHERE expressions to look for username
             $results = mysqli_query($connection, "SELECT password FROM users;");
             // tried this but took out the WHERE for testing purposes
-            // "SELECT password FROM users WHERE email = '{$email}' AND firstName = '{$firstName}';"
+            // "SELECT password FROM users WHERE username = '{$username}' AND firstName = '{$firstName}';"
             
             // mysqli_fetch_assoc() returns either null or row data
             $row = mysqli_fetch_assoc($results);

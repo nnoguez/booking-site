@@ -11,6 +11,8 @@
                 padding: 200px;
                 background-repeat: no-repeat;
                 background-size: cover;
+                align-items: center;
+                text-align: center;
             }
         </style>
     </head>

@@ -5,8 +5,8 @@
     <head>
         <title> Portfolio 2 </title>
         <link rel="stylesheet" href="styles.css">
-        <!-- <style>
-            #header-img {
+        <style>
+            body {
                 background-image: url('img/bg.jpg');
                 width: 100%;
                 height: 100%;
@@ -15,7 +15,7 @@
                 align-items: center;
                 text-align: center;
             }
-        </style> -->
+        </style>
     </head>
     <body>
         <div class="header">

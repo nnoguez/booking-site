@@ -43,7 +43,7 @@
                     echo("
                     Signed Up
                     <br>
-                    <a href='index.php'>Return Home</a>
+                    <a href='home.php'>Return Home</a>
                     <br>
                     <a href='login.php'>Log In</a>
                     "); 

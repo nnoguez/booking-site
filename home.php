@@ -12,27 +12,10 @@
         </ul>
         <div class="box">
             <?php
-                if(security_loggedIn()) { 
                     echo("
                         <div>
-                            <h2> It seems as if you're logged in. Would you like to: </h2>
-                            <br>
-                            <div class='box-item'>
-                                <a href='ticket.php'><button class='button'>Ticket Information</button></a>
-                                <br>
-                                <a href='update.php'><button class='button'>Update Password</button></a>
-                                <br>
-                                <a href='remove.php'><button class='button'>Delete Account</button></a>
-                                <br>
-                                <a href='logout.php'><button class='button'>Log Out</button></a>
-                            </div>
-                        </div>
-                    ");
-
-                } else {
-                    echo("
-                        <div>
-                            <h2>It seems as if you're not logged in. Would you like to:</h2>
+                            <h2>Welcome to MCO e-Ticket Booking</h2>
+                            <h3> Please select one of the following options:</h3>
                             <br>
                             <div class='box-item'>
                                 <a href='signup.php'><button class='button'>Sign Up</button></a>
@@ -41,7 +24,6 @@
                             </div>
                         </div>
                     ");  
-                }
             ?>
         </div>
     </body>

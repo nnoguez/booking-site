@@ -31,7 +31,7 @@
             }
             
             .buttonTrans:hover {
-                font-size: 30px;
+                font-size: 28px;
                 padding: 15px 30px 15px 30px;
             }
         </style>

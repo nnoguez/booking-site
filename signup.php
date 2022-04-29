@@ -21,7 +21,7 @@
                     echo("
                     You are unable to sign up as you are already logged in.
                     <br>
-                    <a href='hom3.php'>Return Home</a>
+                    <a href='home.php'>Return Home</a>
                     "); 
             ?>
             <?php

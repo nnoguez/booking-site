@@ -8,8 +8,7 @@
         <style>
             #header-img {
                 background-image: url('img/bg.jpg');
-                width: 100%;
-                height: 100%;
+ 
                 background-repeat: no-repeat;
                 background-size: cover;
                 align-items: center;

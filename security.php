@@ -6,6 +6,7 @@
         $status = false;
         
         // Validate
+
         // username, password, and newPassword true
         if(isset($_POST["username"]) and isset($_POST["password"]) and isset($_POST["firstName"])) {
             $status = true;

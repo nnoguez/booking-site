@@ -1,5 +1,5 @@
 <?php
-    include("security.php");
+    include("database.php");
 ?>
 <html>
     <head>

@@ -15,6 +15,7 @@
             <li  class="active" style="float:right"><a class="nav-hover" href="profile.php">Profile</a></li>
         </ul>
         <div class="box">
+            <a class='back' href='index.php'><h3>⬅︎</h3></a>
             <h2> Update Password </h2>
             <?php  
                 if(security_loggedIn()) { ?>

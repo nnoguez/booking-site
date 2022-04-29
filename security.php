@@ -6,13 +6,9 @@
         $status = false;
         
         // Validate
-        // username and password true, newPassword no
-        if((isset($_POST["username"]) and isset($_POST["password"])) and (!isset($_POST["newPassword"]))) {
-            $status = true;
-        }
         
         // username, password, and newPassword true
-        if(isset($_POST["username"]) and isset($_POST["password"]) and isset($_POST["newPassword"])) {
+        if(isset($_POST["username"]) and isset($_POST["password"]) and isset($_POST["firstName"])) {
             $status = true;
         }
 
@@ -29,10 +25,10 @@
         //
         // We want to make sure we don't add
         //  duplicate values.
-        if(!database_verifyUser($result["username"], $result["password"])) {
+        if(!database_verifyUser($result["username"], $result["firstName"], $result["password"])) {
             // Username does not exist.
             // Add a new one.
-            database_addUser($result["username"], $result["password"]);
+            database_addUser($result["username"], $result["firstName"], $result["password"]);
         }
         
         // Close connection.
@@ -44,14 +40,14 @@
         $result = [
             "username" => null,
             "password" => null,
-            "newPassword" => null
+            "firstName" => null
         ];
 
         if(security_validate()) {
             // After validation, sanitize text input.
             $result["username"] = htmlspecialchars($_POST["username"]);
             $result["password"] = htmlspecialchars($_POST["password"]);
-            $result["newPassword"] = htmlspecialchars($_POST["newPassword"]);
+            $result["firstName"] = htmlspecialchars($_POST["firstName"]);
         }
 
         // Return array

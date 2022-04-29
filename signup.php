@@ -34,7 +34,7 @@
                 </form>
             <?php
                 if(isset($_POST['submit'])) {
-                    database_addNewUser();
+                    security_addNewUser();
                     echo ("Signed Up");
                     echo("<br><a href='index.php'>Return Home</a><br>"); 
                 }

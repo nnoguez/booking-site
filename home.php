@@ -14,6 +14,7 @@
                 background-size: cover;
                 align-items: center;
                 text-align: center;
+                margin: 0px;
             }
 
             #header-img {

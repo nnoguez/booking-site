@@ -32,7 +32,7 @@
                 security_addNewUser();
                 echo ("Signed Up");
                 // adding this in to redirect user back to login page, thought it would help with navigation
-                echo("<a href='index.php'>Return Home</a><br>"); 
+                echo($status); 
             }
         }
         ?>

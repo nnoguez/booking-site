@@ -32,6 +32,8 @@
                     security_login();
                     security_loggedIn();
                     echo ("Logged In");
+                    echo("<a href='index.php'>Return Home</a><br>"); 
+
                 }
             }
         ?>

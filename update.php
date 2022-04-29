@@ -8,13 +8,11 @@
     </head>
     <body>
         <ul>
-            <li><a href="index.php">MCO e-Ticket Booking ✈</a></li>
-            <li><a href="home.php">Home</a></li>
-            <li><a href="listings.php">Listings</a></li>
-
-            <!-- <li class="active" style="float:right"><a href="signup.php">Sign Up</a></li> -->
-            <li style="float:right"><a href="logout.php">Log Out</a></li>
-            <li style="float:right"><a href="profile.php">Profile</a></li>
+            <li><a class="nav-hover" href="index.php">MCO e-Ticket Booking ✈</a></li>
+            <li><a class="nav-hover" href="home.php">Home</a></li>
+            <li><a class="nav-hover" href="listings.php">Listings</a></li>
+            <li style="float:right"><a class="nav-hover" href="logout.php">Log Out</a></li>
+            <li style="float:right"><a class="nav-hover" href="profile.php">Profile</a></li>
         </ul>
         <div class="box">
             <h2> Update Password </h2>

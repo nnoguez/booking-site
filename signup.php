@@ -8,11 +8,10 @@
     </head>
     <body>
         <ul>
-            <li><a href="index.php">MCO e-Ticket Booking ✈</a></li>
-            <li><a href="home.php">Home</a></li>
-
-            <li class="active" style="float:right"><a href="signup.php">Sign Up</a></li>
-            <li style="float:right"><a href="login.php">Log In</a></li>
+            <li><a class="nav-hover" href="index.php">MCO e-Ticket Booking ✈</a></li>
+            <li><a class="nav-hover" href="home.php">Home</a></li>
+            <li class="active" style="float:right"><a class="nav-hover" href="signup.php">Sign Up</a></li>
+            <li style="float:right"><a class="nav-hover" href="login.php">Log In</a></li>
             <!-- <li style="float:right"><a href="logout.php">Log Out</a></li> -->
         </ul>
         <div class="box">

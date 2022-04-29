@@ -20,7 +20,7 @@
             echo("
                 You are already logged out.
                 <br>
-                <a href='index.php'>Return Home</a>
+                <a href='home.php'>Return Home</a>
             ");  
             }
         ?>

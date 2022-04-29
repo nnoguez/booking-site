@@ -6,13 +6,13 @@
         <title> Portfolio 2 </title>
         <link rel="stylesheet" href="styles.css">
         <style>
-        #header-img {
-            background-image: url('img/bg.jpg');
-            padding: 50px;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-</style>
+            #header-img {
+                background-image: url('img/bg.jpg');
+                padding: 200px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
     </head>
     <body>
         <div class="header">

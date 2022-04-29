@@ -10,7 +10,7 @@
         $server = "localhost";
         // Username
         $firstName = "root";
-        $username = "root";
+        $email = "root";
 
         // If using XAMPP, 
         //  the password is an empty string.
@@ -19,11 +19,11 @@
         $database = "booking";
 
         if($connection == null) {
-            $connection = mysqli_connect($server, $username, $password, $database);
+            $connection = mysqli_connect($server, $email, $password, $database);
         }
     }
 
-    function database_addUser($username, $password) {
+    function database_addUser($email, $password) {
         // Use the global connection
         global $connection;
 
@@ -35,7 +35,7 @@
         }
     }
 
-    function database_verifyUser($username, $password) {
+    function database_verifyUser($email, $password) {
         // Use the global connection
         global $connection;
 

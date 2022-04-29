@@ -9,6 +9,10 @@
     <body>
         <ul>
             <li><a href="index.php">MCO e-Ticket Booking ✈</a></li>
+            <li><a class="nav-hover" href="home.php">Home</a></li>
+            <li><a class="nav-hover" href="listings.php">Listings</a></li>
+            <li class="active" style="float:right"><a class="nav-hover" href="logout.php">Log Out</a></li>
+            <li style="float:right"><a class="nav-hover" href="profile.php">Profile</a></li>
         </ul>
       <div class="box">
         <h2> Logout </h2>

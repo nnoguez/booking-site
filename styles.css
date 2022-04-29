@@ -67,6 +67,7 @@ input {
   
   .left {
     width: 70%;
+    text-align: left;
   }
   
   .right {

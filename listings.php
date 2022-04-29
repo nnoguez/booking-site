@@ -11,8 +11,6 @@
             <li><a href="index.php">MCO e-Ticket Booking ✈</a></li>
             <li><a href="home.php">Home</a></li>
             <li><a href="listings.php">Listings</a></li>
-
-            <!-- <li class="active" style="float:right"><a href="signup.php">Sign Up</a></li> -->
             <li style="float:right"><a href="logout.php">Log Out</a></li>
             <li style="float:right"><a href="profile.php">Profile</a></li>
         </ul>

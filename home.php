@@ -16,8 +16,8 @@
             }
 
             #header-img {
-                margin-left: 40%;
-                margin-right: 40%;
+                margin-left: 45%;
+                margin-right: 45%;
                 margin-top: 20%;
             }
         </style>

@@ -31,7 +31,7 @@
 
 
 
-                if(security_loggedIn()) { 
+                if(!security_loggedIn()) { 
                     echo("It seems as if you're logged in. Would you like to: <br>");
                     echo("<a href='update.php'>Update Password</a><br>"); 
                     echo("<a href='remove.php'>Delete Account</a><br>");  

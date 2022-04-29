@@ -27,6 +27,7 @@
                 padding: 15px 30px 15px 30px;
                 border-radius: 12px;
                 font-size: 20px;
+                border: none;
             }
         </style>
     </head>

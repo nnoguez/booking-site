@@ -77,8 +77,6 @@ h3 {
     border-radius: 25px;
     padding: 30px;
     background-color: white;
-    /* margin-left: 30%;
-    margin-right: 30%; */
     margin: 5% 27% 5% 27%;
     width: 40%;
     justify-content: center;
@@ -133,7 +131,7 @@ input {
   .right {
     width: 30%;
     text-align: right;
-    margin-top: 14px
+    margin-top: 12px
   }
   
   .row:after {

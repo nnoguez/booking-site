@@ -33,6 +33,7 @@
             // Insert username and hashed password
             mysqli_query($connection, "INSERT INTO users (username, firstName, password) VALUES ('{$username}', '{$firstName}', '{$password}');");
         }
+        
     }
 
     // function database_verifyUser($username, $password) {

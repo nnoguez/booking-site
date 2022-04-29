@@ -14,7 +14,7 @@
             <?php
                 if(security_loggedIn()) { 
                     echo("Enter <br>"); 
-                    echo("<a href='logout.php'>Log Out</a>");  
+                    // echo("<a href='logout.php'>Log Out</a>");  
                 } else {
                     echo("
                         <div>

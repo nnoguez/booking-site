@@ -29,7 +29,7 @@
             ?>
                 <a class='back' href='home.php'><h3>⬅︎</h3></a>
                 <h2> Log In </h2>
-                <form method="POST" action="listings.php">
+                <form method="POST">
                     <input type="text" name="username" placeholder="Username"/>
                     <!-- <br>
                     <input type="text" name="firstName" placeholder="First Name"/> 
@@ -44,7 +44,9 @@
                     if(isset($_POST['submit'])) {
                         security_login();
                         security_loggedIn();
-                        echo ("Logged In");
+                        echo ("Logged In
+                        <button class='button'> Go to Site </button>
+                        ");
                     }
                 }
             ?>

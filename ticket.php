@@ -17,6 +17,7 @@
             <li style="float:right"><a href="profile.php">Profile</a></li>
         </ul>
         <div class="box">
+            <h2> Ticket Information </h2>
             <?php
                 // if($connection != null) {
                 //     // Get the results of a query using the connection

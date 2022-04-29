@@ -17,7 +17,7 @@
             <li style="float:right"><a href="profile.php">Profile</a></li>
         </ul>
         <div class="box">
-            <h1> Update Password </h1>
+            <h2> Update Password </h2>
             <?php  
                 if(security_loggedIn()) { ?>
                     <form method="POST">

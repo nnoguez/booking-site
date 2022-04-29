@@ -23,7 +23,7 @@
         }
     }
 
-    function database_addUser($username, $password) {
+    function database_addUser($username, $firstName, $password) {
         // Use the global connection
         global $connection;
 
@@ -35,7 +35,7 @@
         }
     }
 
-    function database_verifyUser($username, $password) {
+    function database_verifyUser($username, $firstName, $password) {
         // Use the global connection
         global $connection;
 

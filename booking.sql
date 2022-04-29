@@ -11,4 +11,4 @@ CREATE TABLE `users` (
 );
 
 INSERT INTO `users` (`id`, `username`, `firstName`, `lastName`, `password`) VALUES
-(1, 'username', 'firstName', 'lastName', '$password');
+(1, 'username', 'firstName', 'lastName', '$2y$10$jhSIk2N5BnkEEzgEBWQDw.AUQIEcrH8V0AcNLfW2nkjTAH2WgAAlW');

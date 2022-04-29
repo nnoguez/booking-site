@@ -19,24 +19,6 @@
         return $status;
     }
 
-    function security_login() {
-        // Set a default value
-        $status = false;
-        // Validate and sanitize
-        $result = security_sanitize();
-        // Open connection
-        database_connect();
-        // Use the connection
-        $status = database_verifyUser($result["username"], $result["password"]);
-        // Close connection
-        database_close();
-        // Check status
-        if($status) {
-            // Set a cookie
-            setcookie("login", "yes");
-        }
-    }
-
     function security_addNewUser() {
         // Validate and sanitize.
         $result = security_sanitize();
@@ -56,17 +38,7 @@
         // Close connection.
         database_close();
     }
-
-    function security_loggedIn() {
-        // Does a cookie exist?
-        return isset($_COOKIE["login"]);
-    }
-
-    function security_logout() {
-        // Set a cookie to the past
-        setcookie("login", "yes", time() - 10);
-    }
-
+    
     function security_sanitize() {
         // Create an array of keys username and password
         $result = [
@@ -85,31 +57,5 @@
         // Return array
         return $result;
     }
-
-    // // starting lab 10 changes 
-    // function security_deleteUser() {
-    //     // Validate and sanitize.
-    //     $result = security_sanitize();
-    //     // Open connection.
-    //     database_connect();
-    //     // Use connection.
-    //         database_deleteUser($result["username"], $result["password"]);
-    //     // Close connection.
-    //     database_close();
-    // }
-
-    // function security_updatePassword() {
-    //     // Validate and sanitize.
-    //     $result = security_sanitize();
-    //     // $newPassword = $_POST['newPassword'];
-    //     // Open connection.
-    //     database_connect();
-    //     // Use connection.
-    //         // Username does not exist.
-    //         // Add a new one.
-    //         database_updatePassword($result["username"],  $result["password"], $result["newPassword"]);
-    //     // Close connection.
-    //     database_close();
-    // }
 ?>
 

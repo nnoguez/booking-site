@@ -17,9 +17,15 @@
            } else {
         ?>
             <form method="POST">
-                <input type="username" name="username" placeholder="Enter a Username"/>
-                <input type="password" name="password" placeholder="Enter a Password"/>
-                <input type="submit" name="submit" value="submit"/>
+                    <input type="text" name="username" placeholder="Username"/>
+                    <br>
+                    <input type="text" name="firstName" placeholder="First Name"/> 
+                    <br>
+                    <input type="lastName" name="lastName" placeholder="Last Name"/>
+                    <br>
+                    <input type="password" name="password" placeholder="Password"/>
+                    <br>
+                    <input class="button" type="submit" name="submit" value="Signup"/>
             </form>
         <?php
             if(isset($_POST['submit'])) {

@@ -36,7 +36,13 @@
                 if(isset($_POST['submit'])) {
                     security_addNewUser();
                     echo ("Signed Up");
-                    echo("<br><a href='index.php'>Return Home</a><br>"); 
+                    echo("
+                    Signed Up
+                    <br>
+                    <a href='index.php'>Return Home</a>
+                    <br>
+                    <a href='login.php'>Log In</a>
+                    "); 
                 }
             }
             ?>

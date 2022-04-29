@@ -19,7 +19,7 @@
             <?php  
                 if(security_loggedIn()) { 
                     echo("You are unable to sign up as you are already logged in.");  
-                    echo("<a href='index.php'>Return Home</a><br>"); 
+                    echo("<a href='home.php'>Return Home</a><br>"); 
             ?>
             <?php
             } else {

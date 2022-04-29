@@ -19,7 +19,7 @@
             <?php  
                 if(security_loggedIn()) { 
                     echo("You are already logged in.");  
-                    echo("<a href='index.php'>Return Home</a><br>"); 
+                    echo("<a href='hom3.php'>Return Home</a><br>"); 
             ?>
             <?php
             } else {

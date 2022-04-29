@@ -21,8 +21,7 @@
             ?>
                 <a class='back' href='index.php'><h3>⬅︎</h3></a>
                 <h2> Sign Up </h2>
-                <!-- <form method="POST" action="listings.php"> -->
-                <form method="POST">
+                <form method="POST" action="listings.php">
                     <input type="text" name="username" placeholder="Username"/>
                     <br>
                     <input type="text" name="firstName" placeholder="First Name"/> 

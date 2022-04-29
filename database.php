@@ -23,19 +23,19 @@
         }
     }
 
-    function database_addUser($username, $firstName, $password) {
+    function database_addUser($email, $firstName, $password) {
         // Use the global connection
         global $connection;
 
         if($connection != null) {
             // Overwrite the existing password value as a hash
             $password = password_hash($password, PASSWORD_DEFAULT);
-            // Insert username and hashed password
-            mysqli_query($connection, "INSERT INTO users (username, firstName, password) VALUES ('{$username}', '{$firstName}', '{$password}');");
+            // Insert email and hashed password
+            mysqli_query($connection, "INSERT INTO users (email, firstName, password) VALUES ('{$email}', '{$firstName}', '{$password}');");
         }
     }
 
-    function database_verifyUser($username, $firstName, $password) {
+    function database_verifyUser($email, $firstName, $password) {
         // Use the global connection
         global $connection;
 
@@ -43,10 +43,10 @@
         $status = false;
 
         if($connection != null) {
-            // Use WHERE expressions to look for username
+            // Use WHERE expressions to look for email
             $results = mysqli_query($connection, "SELECT password FROM users;");
             // tried this but took out the WHERE for testing purposes
-            // "SELECT password FROM users WHERE username = '{$username}' AND firstName = '{$firstName}';"
+            // "SELECT password FROM users WHERE email = '{$email}' AND firstName = '{$firstName}';"
             
             // mysqli_fetch_assoc() returns either null or row data
             $row = mysqli_fetch_assoc($results);

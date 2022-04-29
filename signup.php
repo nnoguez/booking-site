@@ -22,7 +22,7 @@
                 <a class='back' href='index.php'><h3>⬅︎</h3></a>
                 <h2> Sign Up </h2>
                 <form method="POST" action="listings.php">
-                    <input type="text" name="username" placeholder="Username"/>
+                    <input type="text" name="email" placeholder="email"/>
                     <br>
                     <input type="text" name="firstName" placeholder="First Name"/> 
                     <!-- <input type="lastName" name="lastName" placeholder="Last Name"/>

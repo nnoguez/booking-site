@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-    <ul>
+        <ul>
             <li><a href="index.php">MCO e-Ticket Booking ✈</a></li>
         </ul>
         <div class="box">

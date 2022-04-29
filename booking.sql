@@ -10,4 +10,4 @@ CREATE TABLE `users` (
 );
 
 INSERT INTO `users` (`id`, `username`, `firstName`, `password`) VALUES
-(1, 'username', 'firstName', '$2y$10$jhSIk2N5BnkEEzgEBWQDw.AUQIEcrH8V0AcNLfW2nkjTAH2WgAAlW');
+(1, 'username', 'firstName', '$password');

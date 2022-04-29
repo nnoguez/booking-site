@@ -5,6 +5,14 @@
     <head>
         <title> Portfolio 2 </title>
         <link rel="stylesheet" href="styles.css">
+        <style>
+        #header-img {
+            background-image: url('img/bg.jpg');
+            padding: 50px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+</style>
     </head>
     <body>
         <div class="header">
@@ -12,8 +20,6 @@
         </div>
 
         <div id="header-img">
-        <img src="img/bg.jpg" alt="bg img limbitless arms" id="landing-img">
-
             <a href='index.php'><button class='button'>Enter</button></a>  
         </div>
     </body>

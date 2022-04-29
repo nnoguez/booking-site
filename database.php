@@ -9,7 +9,7 @@
         // Server
         $server = "localhost";
         // Username
-        // $firstName = "root";
+        $firstName = "root";
         $username = "root";
 
         // If using XAMPP, 

@@ -12,22 +12,22 @@
         </div>
         <div class="box">
             <?php
-                // if(security_loggedIn()) { 
-                //     echo("Enter <br>"); 
-                //     // echo("<a href='logout.php'>Log Out</a>");  
-                // } else {
-                    // echo("
-                    //     <div>
-                    //         <h2>It seems as if you're not logged in. Would you like to:</h2>
-                    //         <br>
-                    //         <div class='box-item'>
-                    //             <a href='signup.php'><button class='button'>Sign Up</button></a>
-                    //             <br>
-                    //             <a href='login.php'><button class='button'>Login</button></a>
-                    //         </div>
-                    //     </div>
-                    // ");  
-                // }
+                if(security_loggedIn()) { 
+                    echo("Enter <br>"); 
+                    // echo("<a href='logout.php'>Log Out</a>");  
+                } else {
+                    echo("
+                        <div>
+                            <h2>It seems as if you're not logged in. Would you like to:</h2>
+                            <br>
+                            <div class='box-item'>
+                                <a href='signup.php'><button class='button'>Sign Up</button></a>
+                                <br>
+                                <a href='login.php'><button class='button'>Login</button></a>
+                            </div>
+                        </div>
+                    ");  
+                }
             ?>
         </div>
     </body>

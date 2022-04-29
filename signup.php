@@ -1,5 +1,5 @@
 <?php
-    include("database.php");
+    include("security.php");
 ?>
 <html>
     <head>
@@ -12,12 +12,12 @@
         </div>
         <div class="box">
             <?php  
-                // if(security_loggedIn()) { 
-                //     echo("You are unable to sign up as you are already logged in.");  
-                //     echo("<a href='index.php'>Return Home</a><br>"); 
+                if(security_loggedIn()) { 
+                    echo("You are unable to sign up as you are already logged in.");  
+                    echo("<a href='index.php'>Return Home</a><br>"); 
             ?>
             <?php
-            // } else {
+            } else {
             ?>
                 <a class='back' href='index.php'><h3>⬅︎</h3></a>
                 <h2> Sign Up </h2>
@@ -37,7 +37,7 @@
                     echo ("Signed Up");
                     echo("<br><a href='index.php'>Return Home</a><br>"); 
                 }
-            // }
+            }
             ?>
         </div>
     </body>

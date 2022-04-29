@@ -12,14 +12,14 @@
         </div>
         <div class="box">
             <?php  
-                // if(security_loggedIn()) { 
-                //     echo("You are unable to sign up as you are already logged in.");  
-                //     echo("<a href='index.php'>Return Home</a><br>"); 
+                if(security_loggedIn()) { 
+                    echo("You are unable to sign up as you are already logged in.");  
+                    echo("<a href='index.php'>Return Home</a><br>"); 
             ?>
             <?php
-            // } else {
+            } else {
             ?>
-                <a class='back' href='signup.php'><h3>⬅︎</h3></a>
+                <a class='back' href='index.php'><h3>⬅︎</h3></a>
                 
                 <div class="row">
                     <div class="column left">
@@ -59,11 +59,12 @@
                         <button>Book Flight</button>
                     </div>
                 </div>
+
             <?php
-            //     if(isset($_POST['submit'])) {
-            //         security_addNewUser();
-            //     }
-            // }
+                if(isset($_POST['submit'])) {
+                    security_addNewUser();
+                }
+            }
             ?>
         </div>
     </body>

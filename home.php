@@ -16,7 +16,7 @@
             }
 
             #header-img {
-                margin: 10%;
+                margin: 15%;
             }
         </style>
     </head>

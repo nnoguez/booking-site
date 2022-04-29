@@ -22,8 +22,11 @@
                 if(security_loggedIn()) { ?>
                     <form method="POST">
                     <input type="username" name="username" placeholder="Enter a Username"/>
+                    <br>
                     <input type="password" name="password" placeholder="Enter Old Password"/>
+                    <br>
                     <input type="password" name="newPassword" placeholder="Enter New Password"/>
+                    <br>
                     <input type="submit" name="submit" value="submit"/>
                     </form>
                 <?php  

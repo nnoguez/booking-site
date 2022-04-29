@@ -41,7 +41,7 @@
         </div>
 
         <div id="header-img">
-            <a href='listings.php'><button class='buttonTrans'>Enter</button></a>  
+            <a href='home.php'><button class='buttonTrans'>Enter</button></a>  
         </div>
     </body>
 </html>

@@ -55,7 +55,7 @@ ul {
     }
 
 .nav-hover:hover {
-    color:rgb(52, 84, 153);
+    background-color: rgb(65, 106, 217);
 }
 
   .active {

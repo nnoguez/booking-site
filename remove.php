@@ -25,7 +25,7 @@
                     <br>
                     <input type="password" name="password" placeholder="Enter a Password"/>
                     <br>
-                    <input class="button" type="submit" name="submit" value="Delete Account"/>
+                    <input class="button" type="submit" name="submit" value="Delete"/>
                     </form>
             <?php
                     if(isset($_POST['submit'])) {

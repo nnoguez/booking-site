@@ -17,7 +17,7 @@
             <li style="float:right"><a href="profile.php">Profile</a></li>
         </ul>
         <div class="box">
-            <h2> Delete User </h2>
+            <h2> Delete Account </h2>
             <?php  
                 if(security_loggedIn()) { ?>
                     <form method="POST">
@@ -25,7 +25,7 @@
                     <br>
                     <input type="password" name="password" placeholder="Enter a Password"/>
                     <br>
-                    <input class="button" type="submit" name="submit" value="submit"/>
+                    <input class="button" type="submit" name="submit" value="Delete Account"/>
                     </form>
             <?php
                     if(isset($_POST['submit'])) {

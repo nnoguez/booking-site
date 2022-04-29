@@ -12,12 +12,11 @@
                 height: 100%;
                 background-repeat: no-repeat;
                 background-size: cover;
-                align-items: center;
                 margin: 0px;
             }
 
             #header-img {
-                padding: 100px;
+                padding: 400px;
             }
         </style>
     </head>

@@ -10,7 +10,7 @@
         $server = "localhost";
         // Username
         // $firstName = "root";
-        $username = "root";
+        $email = "root";
 
         // If using XAMPP, 
         //  the password is an empty string.
@@ -19,7 +19,7 @@
         $database = "booking";
 
         if($connection == null) {
-            $connection = mysqli_connect($server, $username, $password, $database);
+            $connection = mysqli_connect($server, $email, $password, $database);
         }
     }
 

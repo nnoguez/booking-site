@@ -10,8 +10,8 @@
         <ul>
             <li><a href="index.php">MCO e-Ticket Booking ✈</a></li>
         </ul>
-      <h1> Logout </h1>
       <div class="box">
+        <h1> Logout </h1>
         <?php
             if(security_loggedIn(true)) {
             security_logout();

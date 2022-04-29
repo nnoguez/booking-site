@@ -19,8 +19,8 @@
             <li style="float:right"><a href="login.php">Log In</a></li>
             <li style="float:right"><a href="logout.php">Log Out</a></li>
         </ul>
-        <h1> Delete User </h1>
         <div class="box">
+            <h1> Delete User </h1>
             <?php  
                 if(security_loggedIn()) { ?>
                     <form method="POST">

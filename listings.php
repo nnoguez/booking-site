@@ -62,7 +62,7 @@
                         <button>Book Flight</button>
                     </div>
                 </div>
-            ?>
+            
             <?php
             } else {
                 echo("You are unable to view this page until you sign in.");  

@@ -35,9 +35,10 @@
                     <input class="button" type="submit" name="submit" value="Book Flight"/>
                 </form>
                 <?php 
-                // if (isset($_POST['submit'])) {
-                //     $destinationSelected = $_POST['destinations'];
-                // }
+                if (isset($_POST['submit'])) {
+                    database_selectedDestination();
+                    // $destinationSelected = $_POST['destinations'];
+                }
 
                 // echo $destinationSelected 
                 ?>

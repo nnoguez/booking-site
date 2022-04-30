@@ -72,7 +72,7 @@
         }
     }
 
-    function database_addDestination() {
+    function database_addDestination($destinationReplaced) {
         // Use the global connection
         global $connection;
 

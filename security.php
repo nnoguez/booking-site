@@ -7,7 +7,7 @@
         
         // Validate
         // username and password true, newPassword no
-        if((isset($_POST["username"]) and isset($_POST["firstName"]) and isset($_POST["lastName"])and isset($_POST["password"])) and (!isset($_POST["newPassword"]))) {
+        if((isset($_POST["username"]) and isset($_POST["firstName"]) and isset($_POST["lastName"]) and isset($_POST["password"])) and (!isset($_POST["newPassword"]))) {
             $status = true;
         }
         
@@ -74,7 +74,8 @@
             "firstName" => null,
             "lastName" => null,
             "password" => null,
-            "newPassword" => null
+            "newPassword" => null,
+            "destination" => null
         ];
 
         if(security_validate()) {
@@ -84,6 +85,7 @@
             $result["lastName"] = htmlspecialchars($_POST["lastName"]);
             $result["password"] = htmlspecialchars($_POST["password"]);
             $result["newPassword"] = htmlspecialchars($_POST["newPassword"]);
+            $result["destination"] = htmlspecialchars($_POST["destination"]);
         }
 
         // Return array
@@ -116,6 +118,19 @@
         database_close();
     }
 
+    function security_updateDestination() {
+        // Validate and sanitize.
+        $result = security_sanitize();
+        // $newPassword = $_POST['newPassword'];
+        // Open connection.
+        database_connect();
+        // Use connection.
+            // Username does not exist.
+            // Add a new one.
+            database_updateDestination($result["username"], $result["destination"]);
+        // Close connection.
+        database_close();
+    }
 ?>
 
 

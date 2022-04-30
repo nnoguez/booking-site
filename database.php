@@ -115,7 +115,7 @@
         }
     }
 
-    function database_update($username, $destination) {
+    function database_updateDestination($username, $destination) {
         // Use the global connection
         global $connection;
 

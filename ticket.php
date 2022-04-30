@@ -22,19 +22,19 @@
     }
 
 	.middle {
-      width: 30%;
+      width: 40%;
       background-color: white;
       text-align: left;
     }
     
     .right {
-      width: 30%;
+      width: 20%;
       text-align: left;
       background-color: white;
     }
     
     .left-head {
-      width: 50%;
+      width: 60%;
       text-align: left;
       background-color: red;
       color: white;
@@ -43,7 +43,7 @@
     }
 
     .right-head {
-      width: 50%;
+      width: 40%;
       text-align: left;
       background-color: red;
       color: white;
@@ -66,7 +66,7 @@
     margin: 0px;
     padding-bottom: 400px;
   }
-  
+
 </style>
     </head>
     <body>
@@ -113,7 +113,7 @@
                           <b><p>To:</b> {$destination}</p>
                           <b><p>Date:</b> 30APR <b>Time:</b> 10:45 </p>
                           <b><p>Flight:</b> A23 <b>Gate:</b> 17 <b>Seat:</b> 23D</p>
-                          <h3> Economy </h3>
+                          <h4> Economy </h4>
                       </div>  
                     </div>
                                

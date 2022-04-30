@@ -17,10 +17,6 @@
         <div class="box">
             <?php  
                 if(security_loggedIn()) { 
-                    $selected_radio = $_POST['destinations'];
-                    print $selected_radio;
-
-
             ?>
                 <form action="/action_page.php">
                     <h2>Please select a destination:</h2>
@@ -39,6 +35,12 @@
                     <input class="button" type="submit" name="submit" value="Book Flight"/>
                 </form>
             
+                <?php
+                    if(isset($_POST['submit'])) {
+                        $selected_radio = $_POST['destinations'];
+                        print $selected_radio;
+                    }
+            ?>
             <?php
             } else {
                 // echo $errors['contact'];

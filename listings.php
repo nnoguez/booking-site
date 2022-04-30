@@ -37,10 +37,11 @@
                     <input class="button" type="submit" name="submit" value="Book Flight"/>
                 </form>
                 <?php 
-                if (isset($_POST['submit'])) {
-                    $destinationSelected = $_POST['destinations'];
-                }
-                echo $destinationSelected 
+                    if (isset($_POST['submit'])) {
+                        $destinationSelected = $_POST['destinations'];
+                        $query = "UPDATE `users` SET `destination`=$destinationSelected";
+                        $q = mysqli_query($query);
+                    }
                 ?>
             <?php
             } else {

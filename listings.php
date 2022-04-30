@@ -14,13 +14,13 @@
             <li style="float:right"><a class="nav-hover" href="logout.php">Log Out</a></li>
             <li style="float:right"><a class="nav-hover" href="profile.php">Profile</a></li>
         </ul>
-        <div class="box2">
+        <div class="box">
             <?php  
                 if(security_loggedIn()) { 
             ?>
                 <form action="/action_page.php">
                     <h2>Please select a destination:</h2>
-                    <input type="radio" id="paris" name="destinations" value="paris">
+                    <input style="float:left" type="radio" id="paris" name="destinations" value="paris">
                       <label for="paris">Paris, France</label><br>
                     <input type="radio" id="santiago" name="destinations" value="santiago">
                       <label for="santiago">Santiago, Chile</label><br>

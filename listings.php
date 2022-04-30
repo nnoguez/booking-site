@@ -37,11 +37,10 @@
                     <input class="button" type="submit" name="submit" value="Book Flight"/>
                 </form>
                 <?php 
-                    if (isset($_POST['submit'])) {
-                        $destinationSelected = $_POST['destinations'];
-                        $destinationReplaced = "UPDATE `users` SET `destination`='hi'";
-                        echo `destinations`;
-                    }
+                if (isset($_POST['submit'])) {
+                    $destinationSelected = $_POST['destinations'];
+                }
+                echo $destinationSelected 
                 ?>
             <?php
             } else {

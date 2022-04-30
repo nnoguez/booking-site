@@ -102,7 +102,7 @@
                         <b><p>To:</p></b>
                             <p>{$destination}</p>
                     </div>
-                    <!--
+         
                     <div class="column right">
                         <b><p>Name:</b> {$firstName, $lastName}</p>
                         <b><p>From:</b> MCO</p>
@@ -111,6 +111,7 @@
                         <b><p>Flight:</b> A23 <b>Gate:</b> 17 <b>Seat:</b> 23D</p>
                         <h3> Economy </h3>
                     </div>
+                               <!--
                 </div> --> 
             </div>
         </div>

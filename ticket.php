@@ -117,7 +117,6 @@
                           <b><p>To:</b> {$destination}</p>
                           <b><p>Date:</b> 30APR <b>Time:</b> 10:45 </p>
                           <b><p>Flight:</b> A23 <b>Gate:</b> 17 <b>Seat:</b> 23D</p>
-                          <h4> Economy </h4>
                       </div>  
                     </div>
                                

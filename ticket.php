@@ -64,7 +64,7 @@
   	background-color: white;
     border: 20px solid red;
     margin: 0px;
-    padding-bottom: 400px;
+    padding-bottom: 350px;
   }
 
 </style>

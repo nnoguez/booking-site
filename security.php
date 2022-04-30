@@ -90,9 +90,13 @@
         return $result;
     }
 
-    // function ticketName() {
-    //     echo $firstName, $lastName;
-    // }
+    function ticketName() {
+        if (isset($_POST['submit'])) {
+            $nameSelected = $_POST['firstName'];
+        }
+        echo $nameSelected;
+    } 
+
 
 //     function database_addDestination() {
 //         $destinationReplaced = mysqli_query("UPDATE `users` SET `destination`='hi'");

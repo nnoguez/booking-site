@@ -41,17 +41,13 @@
                     <input class="button" type="submit" name="submit" value="Log In"/>
                 </form>
             <?php
-                //     if(isset($_POST['submit'])) {
-                //         security_login();
-                //         // security_loggedIn();
-                //         echo ("Logged In");
-                //     }
-                // }
-                if (isset($_POST['submit'])) {
-                    $nameSelected = $_POST['firstName'];
+                    if(isset($_POST['submit'])) {
+                            ticketName();
+                        // security_loggedIn();
+                        echo ("Logged In");
+                    }
                 }
-                echo $nameSelected;
-            } 
+          
             ?>
         </div>
     </body>

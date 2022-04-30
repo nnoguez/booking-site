@@ -99,7 +99,7 @@
         // Open connection.
         database_connect();
         // Use connection.
-            database_deleteUser($result["username"], $result["password"]);
+            database_deleteUser($result["username"], $result["firstName"], $result["lastName"], $result["password"]);
         // Close connection.
         database_close();
     }
@@ -113,7 +113,7 @@
         // Use connection.
             // Username does not exist.
             // Add a new one.
-            database_updatePassword($result["username"],  $result["password"], $result["newPassword"]);
+            database_updatePassword($result["username"], $result["firstName"], $result["lastName"], $result["password"], $result["newPassword"]);
         // Close connection.
         database_close();
     }

@@ -72,13 +72,13 @@
         }
     }
 
-    function database_addDestination($destinationSelected) {
+    function database_addDestination($destinationSelected, $destinationReplaced) {
         // Use the global connection
         global $connection;
 
         if($connection != null) {
             // Insert username and hashed password
-            $destinationSelected = 'destinations';
+            $destinationSelected = "hi";
             $destinationReplaced = mysqli_query($connection, "UPDATE users SET destinations = '{$destinationSelected}' WHERE username = '{$username}');");
         }
     }

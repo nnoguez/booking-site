@@ -23,6 +23,7 @@
                     <br>
                     <a class='a-par' href='logout.php'>Log Out</a>
                     "); 
+                    ticketName();
             ?>
             <?php
             } else {

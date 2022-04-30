@@ -91,9 +91,7 @@
     }
 
     function ticketName() {
-        if (security_login()) {
-            echo $firstName, $lastName;
-        }
+        echo $firstName, $lastName;
     }
 
 //     function database_addDestination() {

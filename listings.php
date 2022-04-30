@@ -38,7 +38,7 @@
                 <?php
                     if(isset($_POST['submit'])) {
                         $selected_radio = $_POST['destinations'];
-                        print $selected_radio;
+                        echo $selected_radio;
                     }
             ?>
             <?php

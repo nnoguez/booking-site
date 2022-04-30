@@ -57,11 +57,11 @@
     margin: 0px;
   }
   
-  .ticket-inner {
+  /* .ticket-inner {
   	background-color: white;
     margin: 0px;
     padding: 0px;
-  }
+  } */
 </style>
     </head>
     <body>

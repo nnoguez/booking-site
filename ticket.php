@@ -10,6 +10,10 @@
       box-sizing: border-box;
     }
 
+    p {
+      color: black !important;
+    }
+
     .column {
       float: left;
       /* padding: 5px; */

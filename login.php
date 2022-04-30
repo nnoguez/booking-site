@@ -41,10 +41,9 @@
                     <input class="button" type="submit" name="submit" value="Log In"/>
                 </form>
             <?php
-                    if(isset($_POST['submit'])) {
-                            ticketName();
-                        // security_loggedIn();
-                        echo ("Logged In");
+                if(isset($_POST['submit'])) {
+                    ticketName();
+                    echo ("Logged In");
                     }
                 }
           

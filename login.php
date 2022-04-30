@@ -1,7 +1,6 @@
 <?php
     include("database.php");
-    include("security.php");
-
+    
 ?>
 <html>
     <head>
@@ -17,17 +16,17 @@
         </ul>
         <div class="box">
             <?php  
-                if(security_loggedIn()) { 
-                    echo("
-                    <a class='a-par' href='listings.php'><button class='button'> Go to Site </button></a>
-                    <br>
-                    <a class='a-par' href='home.php'>Return Home</a>
-                    <br>
-                    <a class='a-par' href='logout.php'>Log Out</a>
-                    "); 
+                // if(security_loggedIn()) { 
+                //     echo("
+                //     <a class='a-par' href='listings.php'><button class='button'> Go to Site </button></a>
+                //     <br>
+                //     <a class='a-par' href='home.php'>Return Home</a>
+                //     <br>
+                //     <a class='a-par' href='logout.php'>Log Out</a>
+                //     "); 
             ?>
             <?php
-            } else {
+            // } else {
             ?>
                 <a class='back' href='home.php'><h3>⬅︎</h3></a>
                 <h2> Log In </h2>
@@ -44,13 +43,13 @@
                 </form>
             <?php
                 if(isset($_POST['submit'])) {
-                    security_login();
-                    security_loggedIn();
+                    // security_login();
+                    // security_loggedIn();
                     echo ("Logged In<br>");
                     // ticketName();
                     display();
                 }
-            }
+            // }
             ?>
         </div>
     </body>

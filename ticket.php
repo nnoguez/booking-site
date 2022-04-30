@@ -5,6 +5,62 @@
     <head>
         <title> Portfolio 2 </title>
         <link rel="stylesheet" href="styles.css">
+        <style>
+  * {
+      box-sizing: border-box;
+    }
+
+    .column {
+      float: left;
+      padding: 5px;
+    }
+
+    .left {
+      width: 20%;
+      text-align: left;
+    }
+
+	.middle {
+      width: 40%;
+      text-align: left;
+    }
+    
+    .right {
+      width: 40%;
+      text-align: left;
+    }
+    
+    .left-head {
+      width: 60%;
+      text-align: left;
+      background-color: red;
+    }
+
+    .right-head {
+      width: 40%;
+      text-align: left;
+      background-color: red;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  
+  .ticket {
+  	background-color: red;
+    border: 2px solid rgb(190, 190, 190);
+    margin: 0px;
+  }
+  
+  .ticket-inner {
+  	background-color: white;
+    border: 20px solid red;
+    margin: 0px;
+    padding: 0px;
+  }
+</style>
     </head>
     <body>
         <ul>

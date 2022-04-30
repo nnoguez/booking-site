@@ -28,9 +28,9 @@ if (isset($_POST['Submit1'])) {
 
 <FORM NAME ="form1" METHOD ="POST" ACTION ="radioButton.php">
 
-<INPUT TYPE = 'Radio' Name ='gender'  value= 'male' <?PHP print $male_status; ?>>Male
+<INPUT TYPE = 'Radio' Name ='gender'  value= 'male' <?PHP echo $male_status; ?>>Male
 
-<INPUT TYPE = 'Radio' Name ='gender'  value= 'female' <?PHP print $female_status; ?>>Female
+<INPUT TYPE = 'Radio' Name ='gender'  value= 'female' <?PHP echo $female_status; ?>>Female
 <P>
 <INPUT TYPE = "Submit" Name = "Submit1"  VALUE = "Select a Radio Button">
 </FORM>

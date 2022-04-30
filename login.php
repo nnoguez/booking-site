@@ -46,8 +46,8 @@
                     security_loggedIn();
                     echo ("Logged In<br>");
                     ticketName();
-                    }
                 }
+            }
             ?>
         </div>
     </body>

@@ -47,7 +47,7 @@
                     // security_loggedIn();
                     echo ("Logged In<br>");
                     // ticketName();
-                    security_updateDestination()
+                    security_updateDestination();
                 }
             // }
             ?>

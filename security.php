@@ -27,7 +27,7 @@
         // Open connection
         database_connect();
         // Use the connection
-        $status = database_verifyUserLog($result["username"], $result["password"]);
+        $status = database_verifyUserLog($result["username"], $result["firstName"], $result["lastName"], $result["password"]);
         // Close connection
         database_close();
         // Check status

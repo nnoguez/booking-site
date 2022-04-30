@@ -4,7 +4,7 @@
 <html>
     <head>
         <title> Portfolio 2 </title>
-        <!-- <link rel="stylesheet" href="styles.css"> -->
+        <link rel="stylesheet" href="styles.css">
         <style>
   * {
       box-sizing: border-box;

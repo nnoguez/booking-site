@@ -34,7 +34,13 @@
                       <label for="toronto">Toronto, Canada</label><br>
                     <input class="button" type="submit" name="submit" value="Book Flight"/>
                 </form>
-                <?php echo $selected_radio ?>
+                <?php 
+                if (isset($_POST['submit'])) {
+
+                    $selected_radio = $_POST['destinations'];
+                }
+                echo $selected_radio 
+                ?>
             <?php
             } else {
                 // echo $errors['contact'];

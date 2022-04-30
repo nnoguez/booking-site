@@ -18,9 +18,8 @@
             <?php  
                 if(security_loggedIn()) { 
             ?>
-                <h2>Please select a destination:</h2>
-                <div style="text-align:left">
                 <form action="/action_page.php">
+                    <h2>Please select a destination:</h2>
                     <input type="radio" id="paris" name="destinations" value="paris">
                       <label for="paris">Paris, France</label><br>
                     <input type="radio" id="santiago" name="destinations" value="santiago">
@@ -35,7 +34,7 @@
                       <label for="toronto">Toronto, Canada</label><br>
                     <input class="button" type="submit" name="submit" value="Book Flight"/>
                 </form>
-                </div>
+            
             <?php
             } else {
                 echo("You are unable to view this page until you sign in.");  

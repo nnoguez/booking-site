@@ -91,7 +91,7 @@
                         <h4>║█║▌║</h4>
                         <h4>║█║▌║</h4>
                     </div>
-                          <!-- 
+
                     <div class="column middle">
                         <b><p>Name:</p></b>
                             <p>{$firstName, $lastName}</p>
@@ -110,7 +110,7 @@
                         <h3> Economy </h3>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
     </body>
 </html>

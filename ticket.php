@@ -32,7 +32,7 @@
     }
     
     .right {
-      width: 30%;
+      width: 40%;
       text-align: left;
       background-color: white;
     }
@@ -47,7 +47,7 @@
     }
 
     .right-head {
-      width: 30%;
+      width: 40%;
       text-align: left;
       background-color: #D22B2B;
       color: white;

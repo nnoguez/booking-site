@@ -32,6 +32,7 @@
             
             .buttonTrans:hover {
                 font-size: 28px;
+                box-shadow: 1px 1px 1px black, 0 0 15px lightblue, 0 0 5px lightblue;
             }
         </style>
     </head>

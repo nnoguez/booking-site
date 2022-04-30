@@ -84,7 +84,7 @@
                     <div class="column right-head">
                         <h1>Boarding Pass</h1>
                     </div>
-                    
+                    <!-- 
                     <div class="column left">
                         <h4>║█║▌║</h4>
                         <h4>║█║▌║</h4>
@@ -111,7 +111,7 @@
                         <h3> Economy </h3>
                     </div>
                 </div>
-            </div>
+            </div> -->
         <!-- </div> -->
     </body>
 </html>

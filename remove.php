@@ -20,11 +20,15 @@
             <?php  
                 if(security_loggedIn()) { ?>
                     <form method="POST">
-                    <input type="username" name="username" placeholder="Enter a Username"/>
-                    <br>
-                    <input type="password" name="password" placeholder="Enter a Password"/>
-                    <br>
-                    <input class="button" type="submit" name="submit" value="Delete"/>
+                        <input type="text" name="username" placeholder="Username"/>
+                        <br>
+                        <input type="text" name="firstName" placeholder="First Name"/> 
+                        <br>
+                        <input type="lastName" name="lastName" placeholder="Last Name"/>
+                        <br>
+                        <input type="password" name="password" placeholder="Password"/>
+                        <br>
+                        <input class="button" type="submit" name="submit" value="Delete"/>
                     </form>
             <?php
                     if(isset($_POST['submit'])) {

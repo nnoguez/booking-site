@@ -75,7 +75,7 @@
         <div class="box3">
             <h2> Ticket Information </h2>
             <div class="ticket">
-                <div class="ticket-inner">
+                 <div class="ticket-inner">
                     <div class="column left-head">
                         <h1> Sky Airlines ✈</h1>
                     </div>
@@ -83,7 +83,7 @@
                     <div class="column right-head">
                         <h1>Boarding Pass</h1>
                     </div>
-              
+<!--               
                     <div class="column left">
                         <h4>║█║▌║</h4>
                         <h4>║█║▌║</h4>
@@ -109,7 +109,7 @@
                         <b><p>Flight:</b> A23 <b>Gate:</b> 17 <b>Seat:</b> 23D</p>
                         <h3> Economy </h3>
                     </div>
-                </div>
+                </div> --> 
             </div>
         </div>
     </body>

@@ -2,6 +2,10 @@
     include("radioButton.php");
 ?>
 <html>
+<head>
+        <title> Portfolio 2 </title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
 <body>
 
                <form name ="form1" method ="post" action ="radioButton.php">
@@ -18,4 +22,3 @@
 
 </body>
 </html>
-

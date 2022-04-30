@@ -20,6 +20,8 @@
             ?>
                     <h2> Profile </h2>
                     <br>
+                    <a href='ticket.php'><button class='button'>Ticket Information</button></a>
+                    <br>
                     <a href='update.php'><button class='button'>Update Password</button></a>
                     <br>
                     <a href='remove.php'><button class='button'>Delete Account</button></a>

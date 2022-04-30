@@ -92,7 +92,7 @@
 
 
 //     function database_addDestination() {
-//         "UPDATE `users` SET `destination`='hi'";
+//         $destinationReplaced = mysqli_query("UPDATE `users` SET `destination`='hi'");
 // }
 ?>
 

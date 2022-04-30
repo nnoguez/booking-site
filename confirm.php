@@ -18,16 +18,6 @@
         <div class="box">
             <?php  
                 if(security_loggedIn()) { 
-                    echo("
-                    <a class='a-par' href='listings.php'><button class='button'> Go to Site </button></a>
-                    <br>
-                    <a class='a-par' href='home.php'>Return Home</a>
-                    <br>
-                    <a class='a-par' href='logout.php'>Log Out</a>
-                    "); 
-            ?>
-            <?php
-            } else {
             ?>
                 <a class='back' href='home.php'><h3>⬅︎</h3></a>
                 <h2> Confirm Booking </h2>
@@ -48,6 +38,10 @@
                     echo $destinations;
                     //update on this page
                 }
+            } else {
+                // echo $errors['contact'];
+                echo("You are unable to view this page until you sign in.");  
+                echo("<a class='a-par' href='index.php'>Return Home</a><br>"); 
             }
             ?>
         </div>

@@ -95,7 +95,7 @@
             $fnameSelected = $_POST['firstName'];
             $lnameSelected = $_POST['lastName'];
         }
-        echo $fnameSelected, $lnameSelected;
+        echo $fnameSelected, " ", $lnameSelected;
     } 
 
 

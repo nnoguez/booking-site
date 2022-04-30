@@ -92,9 +92,10 @@
 
     function ticketName() {
         if (isset($_POST['submit'])) {
-            $nameSelected = $_POST['firstName'];
+            $fnameSelected = $_POST['firstName'];
+            $lnameSelected = $_POST['lastName'];
         }
-        echo $nameSelected;
+        echo $fnameSelected, $lnameSelected;
     } 
 
 

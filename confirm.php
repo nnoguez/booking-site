@@ -26,18 +26,22 @@
                     <br>
                     <input type="text" name="firstName" placeholder="First Name"/> 
                     <br>
-                    <input type="lastName" name="lastName" placeholder="Last Name"/>
+                    <input type="text" name="lastName" placeholder="Last Name"/>
+                    <br>
+                    <input type="text" name="lastName" placeholder="Last Name"/>
+                    <br>
+                    <input type="text" name="destination" placeholder="Destination" value=
+                        <?php 
+                            $destinations = $_POST['destinations'];
+                            echo $destinations;
+                        ?>
+                    />
                     <br>
                     <input type="password" name="password" placeholder="Password"/>
                     <br>
                     <input class="button" type="submit" name="submit" value="Log In"/>
                 </form>
             <?php
-                if(isset($_POST['submit'])) {
-                    $destinations = $_POST['destinations'];
-                    echo $destinations;
-                    //update on this page
-                }
             } else {
                 // echo $errors['contact'];
                 echo("You are unable to view this page until you sign in.");  

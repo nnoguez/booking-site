@@ -93,7 +93,7 @@
     }
 
 
-    function database_updatePassword($username, $password, $newPassword) {
+    function database_updatePassword($username, $firstName, $lastName, $password, $newPassword) {
         // Use the global connection
         global $connection;
 
@@ -105,7 +105,7 @@
         if($connection != null) {
             // if the user exists, update the saved password hash in the table users
             // UPDATE users SET password = "new password" WHERE username = $username;
-            if(database_verifyUser($username, $password)) {
+            if(database_verifyUser($username, $firstName, $lastName, $password)) {
                 // $newPasswordText = $_POST['newPassword'];
                 $newPassword = password_hash($newPassword, PASSWORD_DEFAULT);
                 mysqli_query($connection, "UPDATE users SET password = '{$newPassword}' WHERE username = '{$username}';");

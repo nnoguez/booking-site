@@ -132,6 +132,15 @@
         // Close connection.
         database_close();
     }
+
+    function ticketName() {
+        if (isset($_POST['submit'])) {
+            $fnameSelected = $_POST['firstName'];
+            $lnameSelected = $_POST['lastName'];
+        }
+        echo $fnameSelected, " ", $lnameSelected;
+    } 
+
 ?>
 
 

@@ -1,6 +1,6 @@
 <?php
     include("security.php");
-    include("database.php");
+    // include("database.php");
 
 ?>
 <html>

@@ -104,23 +104,11 @@ h3 {
     border-radius: 25px;
     padding: 30px;
     background-color: white;
-    margin: 5% 20% 5% 20%;
+    margin-left: 10%;
     width: 80%;
     justify-content: left;
     align-items: left;
     text-align: left;
-}
-
-.box3 {
-  border: 2px solid rgb(190, 190, 190);
-  border-radius: 25px;
-  padding: 30px;
-  background-color: white;
-  margin: 5% 27% 5% 27%;
-  width: 80%;
-  justify-content: left;
-  align-items: left;
-  text-align: left;
 }
 
 .box-item {

@@ -82,6 +82,7 @@
             <li style="float:right"><a class="nav-hover" href="profile.php">Profile</a></li>
         </ul>
           <div class="box2">
+          <a class='back' href='profile.php'><h3>⬅︎</h3></a>
             <h2> Ticket Information </h2>
             <div class="ticket">
                     <div class="column left-head">

@@ -70,7 +70,7 @@
   	background-color: white;
     border: 20px solid #D22B2B;
     margin: 0px;
-    padding-bottom: 350px;
+    padding-bottom: 320px;
   }
 
 </style>
@@ -97,7 +97,6 @@
 
                     <div class="ticket-inner">
                       <div class="column left">
-                          <h4>║▌║█║▌│║▌║▌█</h4>
                           <h4>║▌║█║▌│║▌║▌█</h4>
                           <h4>║▌║█║▌│║▌║▌█</h4>
                           <h4>║▌║█║▌│║▌║▌█</h4>

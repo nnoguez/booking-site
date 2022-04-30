@@ -72,7 +72,7 @@
         }
     }
 
-    function display($username, $firstName, $lastName, $password) {
+    function display($username) {
         // Use the global connection
         global $connection;
 

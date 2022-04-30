@@ -39,7 +39,7 @@
                 <?php 
                     if (isset($_POST['submit'])) {
                         $destinationReplaced = "UPDATE `users` SET `destination`='hi'";
-                        echo $destinationReplaced;
+                        echo `destination`;
                     }
                 ?>
             <?php

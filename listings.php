@@ -21,7 +21,7 @@
                 if(security_loggedIn()) { 
             ?>
                 <form method="POST">
-                    <h2>Please select af destination:</h2>
+                    <h2>Please select a destination:</h2>
                     <input type="radio" id="paris" name="destinations" value="Paris, France">
                       <label for="paris">Paris, France</label><br>
                     <input type="radio" id="santiago" name="destinations" value="Santiago, Chile">

@@ -73,7 +73,7 @@
     }
     
         // starting lab 10 changes 
-    function database_deleteUser($username, $password) {
+    function database_deleteUser($username, $firstName, $lastName, $password) {
         // Use the global connection
         global $connection;
         // Open connection.
@@ -84,7 +84,7 @@
             // should accept a username and password
         if($connection != null) {
             // if the user exists, remove the row from the table users
-            if( database_verifyUser($username, $password)) {
+            if( database_verifyUser($username, $firstName, $lastName, $password)) {
                 mysqli_query($connection, "DELETE FROM users WHERE username = '{$username}';");
             }
             // Close connection.

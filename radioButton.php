@@ -1,11 +1,11 @@
 <FORM name ="form1" method ="post" action ="radioButton.php">
 
 <Input type = 'Radio' Name ='gender' value= 'male'
-<?PHP print $male_status; ?>
+<?PHP echo $male_status; ?>
 >Male
 
 <Input type = 'Radio' Name ='gender' value= 'female'
-<?PHP print $female_status; ?>
+<?PHP echo $female_status; ?>
 >Female
 
 <P>

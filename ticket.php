@@ -16,7 +16,7 @@
     }
 
     .left {
-      width: 20%;
+      width: 10%;
       background-color: white;
       text-align: left;
     }

@@ -63,7 +63,7 @@
   	background-color: white;
     border: 20px solid red;
     margin: 0px;
-    padding: 100px;
+    padding-bottom: 200px;
   }
 </style>
     </head>

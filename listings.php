@@ -17,6 +17,10 @@
         <div class="box">
             <?php  
                 if(security_loggedIn()) { 
+                    $selected_radio = $_POST['destinations'];
+                    print $selected_radio;
+
+
             ?>
                 <form action="/action_page.php">
                     <h2>Please select a destination:</h2>
@@ -37,6 +41,7 @@
             
             <?php
             } else {
+                // echo $errors['contact'];
                 echo("You are unable to view this page until you sign in.");  
                 echo("<a class='a-par' href='index.php'>Return Home</a><br>"); 
             }

@@ -37,9 +37,9 @@
                     <input class="button" type="submit" name="submit" value="Book Flight"/>
                 </form>
                 <?php 
-                    if (isset($_POST['submit'])) {
+                    // if (isset($_POST['submit'])) {
                         "UPDATE `users` SET `destination`='hi'";
-                    }
+                    // }
                 ?>
             <?php
             } else {

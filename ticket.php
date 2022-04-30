@@ -37,12 +37,15 @@
       width: 50%;
       text-align: left;
       background-color: red;
+      color: white;
+
     }
 
     .right-head {
       width: 50%;
       text-align: left;
       background-color: red;
+      color: white;
     }
 
     .row:after {

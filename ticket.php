@@ -85,7 +85,7 @@
         </ul>
           <div class="box2">
           <a class='back' href='profile.php'><h3>⬅︎</h3></a>
-            <h2> Ticket Information </h2>
+            <h2> Ticket Inforcmation </h2>
             <div class="ticket">
                     <div class="column left-head">
                         <h1> Admin Airlines</h1>

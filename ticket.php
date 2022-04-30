@@ -83,7 +83,7 @@
                     <div class="column right-head">
                         <h1>Boarding Pass</h1>
                     </div>
-                    <!-- 
+              
                     <div class="column left">
                         <h4>║█║▌║</h4>
                         <h4>║█║▌║</h4>
@@ -91,7 +91,7 @@
                         <h4>║█║▌║</h4>
                         <h4>║█║▌║</h4>
                     </div>
-                    
+                          <!-- 
                     <div class="column middle">
                         <b><p>Name:</p></b>
                             <p>{$firstName, $lastName}</p>

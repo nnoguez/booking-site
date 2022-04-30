@@ -107,7 +107,8 @@
 
                       <div class="column middle">
                           <b><p>Name:</p></b>
-                              <p>{$firstName, $lastName}</p>
+                              <!-- <p>{$firstName, $lastName}</p> -->
+                              <?php echo $firstName, $lastName; ?>
                           <b><p>From:</p></b>
                               <p>MCO</p>
                           <b><p>To:</p></b>

@@ -16,17 +16,17 @@
         </ul>
         <div class="box">
             <?php  
-                // if(security_loggedIn()) { 
-                //     echo("
-                //     <a class='a-par' href='listings.php'><button class='button'> Go to Site </button></a>
-                //     <br>
-                //     <a class='a-par' href='home.php'>Return Home</a>
-                //     <br>
-                //     <a class='a-par' href='logout.php'>Log Out</a>
-                //     "); 
+                if(security_loggedIn()) { 
+                    echo("
+                    <a class='a-par' href='listings.php'><button class='button'> Go to Site </button></a>
+                    <br>
+                    <a class='a-par' href='home.php'>Return Home</a>
+                    <br>
+                    <a class='a-par' href='logout.php'>Log Out</a>
+                    "); 
             ?>
             <?php
-            // } else {
+            } else {
             ?>
                 <a class='back' href='home.php'><h3>⬅︎</h3></a>
                 <h2> Logg In </h2>
@@ -49,7 +49,7 @@
                     // ticketName();
                     security_updateDestination();
                 }
-            // }
+            }
             ?>
         </div>
     </body>

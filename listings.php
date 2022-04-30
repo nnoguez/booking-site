@@ -19,7 +19,7 @@
                 if(security_loggedIn()) { 
             ?>
                 <h2>Please select a destination:</h2>
-                <div style="float:left">
+                <div style="text-align:left">
                 <form action="/action_page.php">
                     <input type="radio" id="paris" name="destinations" value="paris">
                       <label for="paris">Paris, France</label><br>

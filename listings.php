@@ -32,7 +32,7 @@
                       <label for="sydney">Sydney, Australia</label><br>
                     <input type="radio" id="toronto" name="destinations" value="toronto">
                       <label for="toronto">Toronto, Canada</label><br>
-                    <input class="button" type="submit" name="submit" value="Book Flight/>
+                    <input class="button" type="submit" name="submit" value="Book Flight"/>
                 </form>
             
             <?php

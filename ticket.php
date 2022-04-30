@@ -32,7 +32,7 @@
     }
     
     .right {
-      width: 20%;
+      width: 30%;
       text-align: left;
       background-color: white;
     }
@@ -116,7 +116,7 @@
                           <b><p>From:</b> MCO</p>
                           <b><p>To:</b> {$destination}</p>
                           <b><p>Date:</b> 30APR <b>Time:</b> 10:45 </p>
-                          <b><p>Flight:</b> A23 <b>Seat:</b> 23D</p>
+                          <b><p>Flight:</b> A23 <b>Gate:</b> 17 <b>Seat:</b> 23D</p>
                       </div>  
                     </div>
                                

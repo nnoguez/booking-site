@@ -39,8 +39,9 @@
                 <?php 
                     if (isset($_POST['submit'])) {
                         $destinationSelected = $_POST['destinations'];
-                        $query = "UPDATE `users` SET `destination`=$destinationSelected";
+                        $query = "UPDATE `users` SET `destination`= hi";
                         $q = mysqli_query($query);
+                        echo $q;
                     }
                 ?>
             <?php

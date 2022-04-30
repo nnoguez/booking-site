@@ -100,6 +100,7 @@
         database_connect();
         // Use connection.
             database_deleteUser($result["username"], $result["firstName"], $result["lastName"], $result["password"]);
+            security_logout();
         // Close connection.
         database_close();
     }

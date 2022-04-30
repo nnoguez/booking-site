@@ -74,6 +74,7 @@
             "firstName" => null,
             "lastName" => null,
             "password" => null,
+            
             "newPassword" => null
         ];
 

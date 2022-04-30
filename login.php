@@ -28,7 +28,7 @@
             } else {
             ?>
                 <a class='back' href='home.php'><h3>⬅︎</h3></a>
-                <h2> Log In </h2>
+                <h2> Log Inn </h2>
                 <form method="POST">
                     <input type="text" name="username" placeholder="Username"/>
                     <br>
@@ -46,7 +46,6 @@
                     echo ("Logged In");
                     }
                 }
-          
             ?>
         </div>
     </body>

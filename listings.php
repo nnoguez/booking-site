@@ -18,7 +18,7 @@
             <?php  
                 if(security_loggedIn()) { 
             ?>
-                <form action="/action_page.php">
+                <form>
                     <h2>Please select a destination:</h2>
                     <input type="radio" id="paris" name="destinations" value="paris">
                       <label for="paris">Paris, France</label><br>

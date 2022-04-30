@@ -64,7 +64,6 @@
 <body>
 <div class="row">
 <div class="ticket">
-	<div class="ticket-inner">
 	<div class="column left-head">
 		<h1> Sky Airlines ✈</h1>
     </div>
@@ -100,7 +99,6 @@
 </div>
 
  
-    </div>
 
 </div>
 </div>

@@ -38,7 +38,7 @@
                 </form>
                 <?php 
                     if (isset($_POST['submit'])) {
-                        security_addDestination();
+                        database_addDestination();
                     }
                 ?>
             <?php

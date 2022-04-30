@@ -90,9 +90,10 @@
         return $result;
     }
 
-    function security_addDestination() {
-        database_addDestination();
-    }
+
+    function database_addDestination($destinationReplaced) {
+        $destinationReplaced = mysqli_query($connection, "UPDATE users SET destinations = 'hi' WHERE destination IS NULL;");
+}
 ?>
 
 

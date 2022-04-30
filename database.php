@@ -72,8 +72,5 @@
         }
     }
 
-    function database_addDestination($destinationReplaced) {
-            $destinationReplaced = mysqli_query($connection, "UPDATE users SET destinations = 'hi' WHERE destinations IS NULL;");
-    }
 ?>
 

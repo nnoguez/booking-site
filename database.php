@@ -71,15 +71,15 @@
             mysqli_close($connection);
         }
     }
-    
-    function database_selectedDestination($destinationSelected) {
+
+    function database_addDestination($destinationSelected) {
         // Use the global connection
         global $connection;
 
         if($connection != null) {
             // Insert username and hashed password
             $destinationSelected = $_POST['destinations'];
-            $destinationReplaced = mysqli_query($connection, "UPDATE users SET 'destinations' = '{$destinationSelected}' WHERE username = '{$username}');");
+            $destinationReplaced = mysqli_query($connection, "UPDATE users SET destinations = '{$destinationSelected}' WHERE username = '{$username}');");
         }
     }
 ?>

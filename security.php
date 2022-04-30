@@ -89,6 +89,12 @@
         // Return array
         return $result;
     }
+
+    function security_addDestination() {
+        if (isset($_POST['submit'])) {
+            database_addDestination();
+        }
+    }
 ?>
 
 

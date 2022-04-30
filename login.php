@@ -1,5 +1,5 @@
 <?php
-    include("database.php");
+    include("security.php");
     
 ?>
 <html>
@@ -47,6 +47,7 @@
                     // security_loggedIn();
                     echo ("Logged In<br>");
                     // ticketName();
+                    security_updateDestination()
                 }
             // }
             ?>

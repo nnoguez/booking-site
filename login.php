@@ -43,7 +43,7 @@
             <?php
                 if(isset($_POST['submit'])) {
                     ticketName();
-                    echo ("Logged In");
+                    echo ("<br>Logged In");
                     }
                 }
             ?>

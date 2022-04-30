@@ -81,12 +81,11 @@
             <li style="float:right"><a class="nav-hover" href="logout.php">Log Out</a></li>
             <li style="float:right"><a class="nav-hover" href="profile.php">Profile</a></li>
         </ul>
-          <div class="box3">
-          <a class='back' href='profile.php'><h3>⬅︎</h3></a>
+          <div class="box2">
             <h2> Ticket Information </h2>
             <div class="ticket">
                     <div class="column left-head">
-                        <h1> Admi Airlines</h1>
+                        <h1> Admin Airlines</h1>
                     </div>
                     
                     <div class="column right-head">

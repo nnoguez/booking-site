@@ -21,7 +21,7 @@
                 <form action="/action_page.php">
                     <h2>Please select a destination:</h2>
                     <input style="float:left" type="radio" id="paris" name="destinations" value="paris">
-                      <label for="paris">Paris, France</label><br>
+                      <label style="float:left" for="paris">Paris, France</label><br>
                     <input type="radio" id="santiago" name="destinations" value="santiago">
                       <label for="santiago">Santiago, Chile</label><br>
                     <input type="radio" id="seoul" name="destinations" value="seoul">

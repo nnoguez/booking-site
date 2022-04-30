@@ -77,11 +77,11 @@
             <div class="ticket">
                  <div class="ticket-inner">
                     <div class="column left-head">
-                        <h1> Sky Airlines ✈</h1>
+                        <h1> Admin Airlines</h1>
                     </div>
                     
                     <div class="column right-head">
-                        <h1>Boarding Pass ✈</h1>
+                        <h1>Boarding Pass</h1>
                     </div>
 <!--               
                     <div class="column left">

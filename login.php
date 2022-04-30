@@ -43,7 +43,6 @@
             <?php
                     echo ("Logged In<br>");
                     ticketName();
-
                 }
             ?>
         </div>

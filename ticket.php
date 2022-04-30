@@ -56,13 +56,12 @@
   
   .ticket {
   	background-color: red;
-    border: 2px solid rgb(190, 190, 190);
     margin: 0px;
   }
   
   .ticket-inner {
   	background-color: white;
-    border: 2px solid red;
+    border: 20px solid red;
     margin: 0px;
     padding: 0px;
   }
@@ -113,8 +112,8 @@
                         <b><p>Flight:</b> A23 <b>Gate:</b> 17 <b>Seat:</b> 23D</p>
                         <h3> Economy </h3>
                     </div>
-                               <!--
-                </div> --> 
+                               
+                </div> 
             </div>
         </div>
     </body>

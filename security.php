@@ -90,6 +90,9 @@
         return $result;
     }
 
+    function ticketName() {
+        echo $firstName, $lastName;
+    }
 
 //     function database_addDestination() {
 //         $destinationReplaced = mysqli_query("UPDATE `users` SET `destination`='hi'");

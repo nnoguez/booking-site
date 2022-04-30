@@ -107,7 +107,7 @@
                       <div class="column middle">
                           <b><p>Name:</p></b>
                               <!-- <p>{$firstName, $lastName}</p> -->
-                              <?php echo $firstName, $lastName; ?>
+                              <?php ticketName() ?>
                           <b><p>From:</p></b>
                               <p>MCO</p>
                           <b><p>To:</p></b>

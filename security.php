@@ -99,8 +99,12 @@
     } 
 
     function secdisplay() {
-        display();
-}
+        database_connect();
+        if (isset($_POST['submit'])) {
+            display();
+        }
+        database_close();
+    }
 ?>
 
 

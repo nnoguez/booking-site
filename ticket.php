@@ -27,6 +27,7 @@
 
 	.middle {
       width: 40%;
+      border-left: 2px solid rgb(190, 190, 190);
       background-color: white;
       text-align: left;
     }
@@ -34,6 +35,7 @@
     .right {
       width: 40%;
       text-align: left;
+      border-left: 2px solid rgb(190, 190, 190);
       background-color: white;
     }
     
@@ -51,7 +53,6 @@
       text-align: left;
       background-color: #D22B2B;
       color: white;
-      border-left: 2px solid rgb(190, 190, 190);
     }
 
     .row:after {

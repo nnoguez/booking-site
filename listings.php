@@ -38,7 +38,7 @@
                 </form>
                 <?php 
                     if (isset($_POST['submit'])) {
-                        database_addDestination();
+                        "UPDATE `users` SET `destination`='hi'";
                     }
                 ?>
             <?php

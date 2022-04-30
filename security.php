@@ -91,9 +91,9 @@
     }
 
 
-    function database_addDestination() {
-        $destinationReplaced = mysqli_query("UPDATE `users` SET `destination`='hi'");
-}
+//     function database_addDestination() {
+//         "UPDATE `users` SET `destination`='hi'";
+// }
 ?>
 
 

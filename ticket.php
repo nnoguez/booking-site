@@ -40,16 +40,16 @@
     .left-head {
       width: 60%;
       text-align: left;
-      background-color: red;
+      background-color: #D22B2B;
       color: white;
       padding-left: 20px;
 
     }
 
     .right-head {
-      width: 40%;
+      width: 40%;c
       text-align: left;
-      background-color: red;
+      background-color: #D22B2B;
       color: white;
     }
 
@@ -60,13 +60,13 @@
     }
   
   .ticket {
-  	background-color: red;
+  	background-color: #D22B2B;
     margin: 30px;
   }
   
   .ticket-inner {
   	background-color: white;
-    border: 20px solid red;
+    border: 20px solid #D22B2B;
     margin: 0px;
     padding-bottom: 350px;
   }

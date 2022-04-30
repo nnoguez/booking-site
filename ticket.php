@@ -47,7 +47,7 @@
     }
 
     .right-head {
-      width: 40%;c
+      width: 30%;
       text-align: left;
       background-color: #D22B2B;
       color: white;

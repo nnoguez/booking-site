@@ -7,12 +7,12 @@
         
         // Validate
         // username and password true, newPassword no
-        if((isset($_POST["username"]) and isset($_POST["destination"]) and isset($_POST["firstName"]) and isset($_POST["lastName"]) and isset($_POST["password"])) and (!isset($_POST["newPassword"]))) {
+        if((isset($_POST["username"]) and isset($_POST["firstName"]) and isset($_POST["lastName"]) and isset($_POST["password"])) and (!isset($_POST["newPassword"]))) {
             $status = true;
         }
         
         // username, password, and newPassword true
-        if(isset($_POST["username"]) and isset($_POST["destination"]) and isset($_POST["firstName"]) and isset($_POST["lastName"]) and isset($_POST["password"]) and isset($_POST["newPassword"])) {
+        if(isset($_POST["username"]) and isset($_POST["firstName"]) and isset($_POST["lastName"]) and isset($_POST["password"]) and isset($_POST["newPassword"])) {
             $status = true;
         }
 

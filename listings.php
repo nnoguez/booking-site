@@ -24,8 +24,8 @@
                       <label for="paris">Paris, France</label><br>
                     <input type="radio" id="santiago" name="destinations" value="santiago">
                       <label for="santiago">Santiago, Chile</label><br>
-                    <input type="radio" id="seoul" name="destinations" value="seoul">
-                      <label for="seoul">Seoul, South Korea</label><br>
+                    <input type="radio" id="id" name="destinations" value="value">
+                      <label for="for">Seoul, South Korea</label><br>
                     <input type="radio" id="tokyo" name="destinations" value="tokyo">
                       <label for="tokyo">Tokyo, Japan</label><br>
                     <input type="radio" id="sydney" name="destinations" value="sydney">
@@ -36,10 +36,10 @@
                 </form>
                 <?php 
                 if (isset($_POST['submit'])) {
-
-                    $selected_radio = $_POST['destinations'];
+                    $destinationSelected = $_POST['destinations'];
                 }
-                echo $selected_radio 
+
+                echo $destinationSelected 
                 ?>
             <?php
             } else {

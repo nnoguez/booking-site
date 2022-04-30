@@ -85,7 +85,7 @@
             <h2> Ticket Information </h2>
             <div class="ticket">
                     <div class="column left-head">
-                        <h1> Admin Airlines</h1>
+                        <h1> Admi Airlines</h1>
                     </div>
                     
                     <div class="column right-head">

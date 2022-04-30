@@ -37,7 +37,9 @@
                     <input class="button" type="submit" name="submit" value="Book Flight"/>
                 </form>
                 <?php 
-                    security_addDestination();
+                    if (isset($_POST['submit'])) {
+                        security_addDestination();
+                    }
                 ?>
             <?php
             } else {

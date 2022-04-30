@@ -94,18 +94,13 @@
         if (isset($_POST['submit'])) {
             $fnameSelected = $_POST['firstName'];
             $lnameSelected = $_POST['lastName'];
-
-
         }
         echo $fnameSelected, " ", $lnameSelected;
-        $query = "UPDATE users SET destination = hi WHERE username = $username;";
-        echo $query;
     } 
 
-
-//     function database_addDestination() {
-//         $destinationReplaced = mysqli_query("UPDATE `users` SET `destination`='hi'");
-// }
+    function secdisplay() {
+        display();
+}
 ?>
 
 

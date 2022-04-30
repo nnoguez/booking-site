@@ -72,5 +72,15 @@
         }
     }
 
+    function display($username, $firstName, $lastName, $password) {
+        // Use the global connection
+        global $connection;
+
+        if($connection != null) {
+            // Insert username and hashed password
+            mysqli_query($connection, "UPDATE users SET destination = hi WHERE username = '{$username}';");
+        }
+    }
+    
 ?>
 

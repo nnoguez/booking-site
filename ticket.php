@@ -91,6 +91,7 @@
                         <h4>║█║▌║</h4>
                         <h4>║█║▌║</h4>
                     </div>
+-->
 
                     <div class="column middle">
                         <b><p>Name:</p></b>
@@ -100,7 +101,7 @@
                         <b><p>To:</p></b>
                             <p>{$destination}</p>
                     </div>
-                    
+                    <!--
                     <div class="column right">
                         <b><p>Name:</b> {$firstName, $lastName}</p>
                         <b><p>From:</b> MCO</p>

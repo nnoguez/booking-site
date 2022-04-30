@@ -22,13 +22,13 @@
     }
 
 	.middle {
-      width: 40%;
+      width: 30%;
       background-color: white;
       text-align: left;
     }
     
     .right {
-      width: 40%;
+      width: 30%;
       text-align: left;
       background-color: white;
     }

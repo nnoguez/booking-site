@@ -24,33 +24,33 @@
                     "); 
             ?>
             <?php
-            } else {
-            ?>
-                <a class='back' href='home.php'><h3>⬅︎</h3></a>
-                <h2> Sign Up </h2>
-                <form method="POST">
-                    <input type="text" name="username" placeholder="Username"/>
-                    <br>
-                    <input type="text" name="firstName" placeholder="First Name"/> 
-                    <br>
-                    <input type="lastName" name="lastName" placeholder="Last Name"/>
-                    <br>
-                    <input type="password" name="password" placeholder="Password"/>
-                    <br>
-                    <input class="button" type="submit" name="submit" value="Sign up"/>
-                </form>
-            <?php
-                if(isset($_POST['submit'])) {
-                    security_addNewUser();
-                    echo("
-                    Signed Up
-                    <br>
-                    <a class='a-par' href='home.php'>Return Home</a>
-                    <br>
-                    <a class='a-par' href='login.php'>Log In</a>
-                    "); 
+                } else {
+                ?>
+                    <a class='back' href='home.php'><h3>⬅︎</h3></a>
+                    <h2> Sign Up </h2>
+                    <form method="POST">
+                        <input type="text" name="username" placeholder="Username"/>
+                        <br>
+                        <input type="text" name="firstName" placeholder="First Name"/> 
+                        <br>
+                        <input type="lastName" name="lastName" placeholder="Last Name"/>
+                        <br>
+                        <input type="password" name="password" placeholder="Password"/>
+                        <br>
+                        <input class="button" type="submit" name="submit" value="Sign up"/>
+                    </form>
+                <?php
+                    if(isset($_POST['submit'])) {
+                        security_addNewUser();
+                        echo("
+                        Signed Up
+                        <br>
+                        <a class='a-par' href='home.php'>Return Home</a>
+                        <br>
+                        <a class='a-par' href='login.php'>Log In</a>
+                        "); 
+                    }
                 }
-            }
             ?>
         </div>
     </body>

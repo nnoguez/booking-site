@@ -7,7 +7,7 @@
         
         // Validate
         // username and password true, newPassword no
-        if((isset($_POST["username"]) and isset($_POST["firstName"]) and isset($_POST["lastName"]) and isset($_POST["password"])) and (!isset($_POST["newPassword"]))) {
+        if((isset($_POST["username"]) and isset($_POST["firstName"]) and isset($_POST["lastName"])and isset($_POST["password"])) and (!isset($_POST["newPassword"]))) {
             $status = true;
         }
         
@@ -27,7 +27,7 @@
         // Open connection
         database_connect();
         // Use the connection
-        $status = database_verifyUser($result["username"], $result["password"]);
+        $status = database_verifyUser($result["username"], $result["firstName"], $result["lastName"], $result["password"]);
         // Close connection
         database_close();
         // Check status

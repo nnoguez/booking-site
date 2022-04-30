@@ -81,7 +81,7 @@
             <li style="float:right"><a class="nav-hover" href="logout.php">Log Out</a></li>
             <li style="float:right"><a class="nav-hover" href="profile.php">Profile</a></li>
         </ul>
-          <div class="box3">
+          <div class="box2">
             <h2> Ticket Information </h2>
             <div class="ticket">
                     <div class="column left-head">

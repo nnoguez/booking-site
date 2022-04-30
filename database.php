@@ -78,7 +78,7 @@
 
         if($connection != null) {
             // Insert username and hashed password
-            $destinationSelected = $_POST['destinations'];
+            $destinationSelected = 'destinations';
             $destinationReplaced = mysqli_query($connection, "UPDATE users SET destinations = '{$destinationSelected}' WHERE username = '{$username}');");
         }
     }

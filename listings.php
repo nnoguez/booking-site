@@ -38,8 +38,9 @@
                 </form>
                 <?php 
                     if (isset($_POST['submit'])) {
+                        $destinationSelected = $_POST['destinations'];
                         $destinationReplaced = "UPDATE `users` SET `destination`='hi'";
-                        echo `destination`;
+                        echo `destinations`;
                     }
                 ?>
             <?php

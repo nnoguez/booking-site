@@ -89,17 +89,6 @@
         // Return array
         return $result;
     }
-
-    function database_selectedDestination($destinationSelected) {
-        // Use the global connection
-        global $connection;
-
-        if($connection != null) {
-            // Insert username and hashed password
-            $destinationSelected = $_POST['destinations'];
-            mysqli_query($connection, "INSERT INTO users (destination) VALUES ('{$destinationSelected}');");
-        }
-    }
 ?>
 
 

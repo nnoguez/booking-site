@@ -61,7 +61,7 @@
   
   .ticket {
   	background-color: red;
-    margin: 10px;
+    margin: 30px;
   }
   
   .ticket-inner {

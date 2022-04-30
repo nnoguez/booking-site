@@ -91,9 +91,7 @@
     }
 
     function security_addDestination() {
-        if (isset($_POST['submit'])) {
-            database_addDestination();
-        }
+        database_addDestination();
     }
 ?>
 

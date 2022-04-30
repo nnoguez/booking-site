@@ -17,17 +17,20 @@
 
     .left {
       width: 20%;
+      background-color: white;
       text-align: left;
     }
 
 	.middle {
       width: 40%;
+      background-color: white;
       text-align: left;
     }
     
     .right {
       width: 40%;
       text-align: left;
+      background-color: white;
     }
     
     .left-head {

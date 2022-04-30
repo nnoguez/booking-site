@@ -23,7 +23,6 @@
                     <br>
                     <a class='a-par' href='logout.php'>Log Out</a>
                     "); 
-                    ticketName();
             ?>
             <?php
             } else {
@@ -45,7 +44,8 @@
                     if(isset($_POST['submit'])) {
                         security_login();
                         // security_loggedIn();
-                        echo ("Logged In");
+                        echo ("Logged In
+                        $firstName");
                     }
                 }
             ?>

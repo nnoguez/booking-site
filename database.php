@@ -115,26 +115,26 @@
         }
     }
 
-    function database_updateDestination($username, $destination) {
-        // Use the global connection
-        global $connection;
+    // function database_updateDestination($username, $destination) {
+    //     // Use the global connection
+    //     global $connection;
 
-        // Open connection.
-        database_connect();
-        // verify the user exists before changing any data
-        // should accept a username, original password, and new password
-        // communicate with the database server
-        if($connection != null) {
-            // if the user exists, update the saved password hash in the table users
-            // UPDATE users SET password = "new password" WHERE username = $username;
-            if(database_verifyUser($username, $destination)) {
-                // $newPasswordText = $_POST['newPassword'];
-                $newPassword = password_hash($newPassword, PASSWORD_DEFAULT);
-                mysqli_query($connection, "UPDATE users SET destination = 'hi' WHERE username = '{$username}';");
-            }
-            // Close connection.
-            // database_close();
-        }
-    }
+    //     // Open connection.
+    //     database_connect();
+    //     // verify the user exists before changing any data
+    //     // should accept a username, original password, and new password
+    //     // communicate with the database server
+    //     if($connection != null) {
+    //         // if the user exists, update the saved password hash in the table users
+    //         // UPDATE users SET password = "new password" WHERE username = $username;
+    //         if(database_verifyUser($username, $destination)) {
+    //             // $newPasswordText = $_POST['newPassword'];
+    //             $newPassword = password_hash($newPassword, PASSWORD_DEFAULT);
+    //             mysqli_query($connection, "UPDATE users SET destination = 'hi' WHERE username = '{$username}';");
+    //         }
+    //         // Close connection.
+    //         // database_close();
+    //     }
+    // }
 ?>
 

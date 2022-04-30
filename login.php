@@ -43,11 +43,11 @@
                 </form>
             <?php
                 if(isset($_POST['submit'])) {
-                    // security_login();
-                    // security_loggedIn();
+                    security_login();
+                    security_loggedIn();
                     echo ("Logged In<br>");
                     // ticketName();
-                    security_updateDestination();
+                    // security_updateDestination();
                 }
             }
             ?>

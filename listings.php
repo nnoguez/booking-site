@@ -20,7 +20,7 @@
             <?php  
                 if(security_loggedIn()) { 
             ?>
-                <form method="POST">
+                <form method="POST" action="confirm.php">
                     <h2>Please select a destination:</h2>
                     <input type="radio" id="paris" name="destinations" value="Paris, France">
                       <label for="paris">Paris, France</label><br>
@@ -38,9 +38,7 @@
                 </form>
                 <?php 
                     if (isset($_POST['submit'])) {
-                        // $destinationSelected = $_POST['destinations'];
-                        $query = "UPDATE users SET destination = hi WHERE username = $username;";
-                        echo $query;
+                        $destinations = $_GET['destinations'];
                     }
                 ?>
             <?php

@@ -26,7 +26,7 @@
                         <br>
                         <input type="text" name="lastName" placeholder="Last Name"/>
                         <br>
-                        <input type="text" name="password" placeholder="Password"/>
+                        <input type="password" name="password" placeholder="Password"/>
                         <br>
                         <input class="button" type="submit" name="submit" value="Delete"/>
                     </form>

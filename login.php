@@ -37,7 +37,7 @@
                     <br>
                     <input type="text" name="lastName" placeholder="Last Name"/>
                     <br>
-                    <input type="password" name="password" placeholder="Password"/>
+                    <input type="text" name="password" placeholder="Password"/>
                     <br>
                     <input class="button" type="submit" name="submit" value="Log In"/>
                 </form>
@@ -46,15 +46,8 @@
                     security_login();
                     security_loggedIn();
                     echo ("Logged In<br>");
-                    echo("
-                    <a class='a-par' href='listings.php'><button class='button'> Go to Site </button></a>
-                    <br>
-                    <a class='a-par' href='home.php'>Return Home</a>
-                    <br>
-                    <a class='a-par' href='logout.php'>Log Out</a>
-                    "); 
                     // ticketName();
-                    security_updateDestination();
+                    // security_updateDestination();
                 }
             }
             ?>

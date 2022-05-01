@@ -1,7 +1,6 @@
 <?php
     include("security.php");
     echo("hello");
-    echo($_POST["destinations"]);
 ?>
 <html>
     <head>
@@ -112,7 +111,7 @@
                           <b><p>From:</p></b>
                               <p>MCO</p>
                           <b><p>To:</p></b>
-                              <p>{$destination}</p>
+                              <?php echo($_POST["destinations"]); ?>
                       </div>
           
                       <div class="column right">

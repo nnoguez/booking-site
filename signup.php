@@ -21,6 +21,7 @@
                     You are unable to sign up as you are already logged in.
                     <br>
                     <a class='a-par' href='home.php'>Return Home</a>
+                    <br>
                     <a class='a-par' href='logout.php'>Log Out</a>
 
                     "); 

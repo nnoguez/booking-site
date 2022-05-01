@@ -45,7 +45,10 @@
                 if(isset($_POST['submit'])) {
                     security_login();
                     security_loggedIn();
-                    echo ("Logged In<br>");
+                    echo ("Logged In<br>
+                    <a class='a-par' href='listings.php'><button class='button'> Go to Site </button></a>
+                    ");
+                    
                     // ticketName();
                     // security_updateDestination();
                 }

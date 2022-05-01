@@ -107,9 +107,9 @@
                       <div class="column middle">
                           <b><p>Name:</p></b>
                               <p>
-                              <?php>
-                              session_start();
-                                $firstName = $_SESSION['firstName'];
+                              <?php
+                                session_start();
+                                  $firstName = $_SESSION['firstName'];
                               ?></p>
                        
                           <b><p>From:</p></b>

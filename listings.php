@@ -39,7 +39,48 @@
                 <?php 
                     if (isset($_POST['submit'])) {
                         $destinations = $_GET['destinations'];
-                        security_updateDestination();
+                        // security_updateDestination();
+
+
+
+                        function updateDestination($username, $destination) {
+                            $connection = mysqli_connect("localhost", "root", "");
+                            $db = mysqli_select_db($connection, 'booking');
+                          
+                                if(isset($_POST['submit'])) 
+                                {
+                                    $destination = $_POST['destination'];
+                                    $query = "UPDATE `users` SET destination = '$destination' WHERE username = '{$username}';";
+                                    $query_run = mysqli_query($connection, $query);
+                    
+                                    if($query_run)
+                                    {
+                                        echo "destination processing";
+                                    } else {
+                                        echo "destination stuck";
+                                    }
+                                }
+                            }
+                        }
+                        updateDestination();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                     }
                 ?>

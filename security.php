@@ -119,9 +119,9 @@
         database_close();
     }
 
-    function security_updateDestination() {
-            database_updateDestination($result["username"],  $result["firstName"], $result["lastName"], $result["password"], $result["destination"]);
-    }
+    // function security_updateDestination() {
+    //         database_updateDestination($result["username"],  $result["firstName"], $result["lastName"], $result["password"], $result["destination"]);
+    // }
 
     function ticketName() {
         if (isset($_POST['submit'])) {

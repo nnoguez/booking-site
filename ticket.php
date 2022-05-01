@@ -105,22 +105,36 @@
 
                       <div class="column middle">
                           <b><p>Name:</p></b>
-                              <p>{$firstName, $lastName}</p>
+                              <?php 
+                                $firstName = $_POST['firstName'];
+                                $lastName = $_POST['lastName'];
+                                echo $firstName, $lastName;
+                              ?>
                        
                           <b><p>From:</p></b>
                               <p>MCO</p>
                           <b><p>To:</p></b>
-                              <!-- <p>{$destination}</p> -->
                               <?php 
-                            $destinations = $_POST['destinations'];
-                            echo $destinations;
-                        ?>
+                                $destinations = $_POST['destinations'];
+                                echo $destinations;
+                              ?>
                       </div>
           
                       <div class="column right">
-                          <b><p>Name:</b> {$firstName, $lastName}</p>
+                          <b><p>Name:</b> 
+                              <?php 
+                                $firstName = $_POST['firstName'];
+                                $lastName = $_POST['lastName'];
+                                echo $firstName, $lastName;
+                              ?>
+                            </p>
                           <b><p>From:</b> MCO</p>
-                          <b><p>To:</b> {$destination}</p>
+                          <b><p>To:</b> 
+                              <?php 
+                                $destinations = $_POST['destinations'];
+                                echo $destinations;
+                              ?>
+                          </p>
                           <b><p>Date:</b> 30APR <b>Time:</b> 10:45 </p>
                           <b><p>Flight:</b> A23 <b>Gate:</b> 17 <b>Seat:</b> 23D</p>
                       </div>  

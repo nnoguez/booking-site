@@ -34,6 +34,10 @@
                         <?php 
                             $destinations = $_POST['destinations'];
                             echo $destinations;
+                            $username = $_GET['username'];
+                            $firstName = $_GET['firstName'];
+                            $lastName = $_GET['lastName'];
+                            $password = $_GET['password'];
                         ?>
                     />
                     <br>

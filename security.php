@@ -128,7 +128,7 @@
         // Use connection.
             // Username does not exist.
             // Add a new one.
-            database_updateDestination($result["username"], $result["destination"]);
+            database_updateDestination($result["username"],  $result["firstName"], $result["lastName"], $result["password"], $result["destination"]);
         // Close connection.
         database_close();
     }

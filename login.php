@@ -37,18 +37,22 @@
                     <br>
                     <input type="text" name="lastName" placeholder="Last Name"/>
                     <br>
-                    <input type="text" name="password" placeholder="Password"/>
+                    <input type="password" name="password" placeholder="Password"/>
                     <br>
-                    <input class="button" type="submit" name="submit" value="Log In"/>
                     <?php
-                    security_login();
-                    security_loggedIn();
-                    echo ("Logged In<br>");
-                    // ticketName();
-                    // security_updateDestination();
+                        security_login();
+                        security_loggedIn();
+                        // ticketName();
+                        // security_updateDestination();
                     ?>
+                    <input class="button" type="submit" name="submit" value="Log In"/>
                 </form>
             <?php
+                if(isset($_POST['submit'])) {
+                    echo ("Logged In<br>");
+                    // ticketName();
+                    security_updateDestination();
+                }
             }
             ?>
         </div>

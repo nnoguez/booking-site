@@ -39,6 +39,7 @@
                 <?php 
                     if (isset($_POST['submit'])) {
                         $destinations = $_GET['destinations'];
+                        
                     }
                 ?>
             <?php

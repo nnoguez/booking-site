@@ -1,5 +1,7 @@
 <?php
     include("security.php");
+    echo("hello");
+    echo($_POST["destination"]);
 ?>
 <html>
     <head>

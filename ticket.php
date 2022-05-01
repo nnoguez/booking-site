@@ -110,7 +110,11 @@
                           <b><p>From:</p></b>
                               <p>MCO</p>
                           <b><p>To:</p></b>
-                              <p>{$destination}</p>
+                              <!-- <p>{$destination}</p> -->
+                              <?php 
+                            $destinations = $_POST['destinations'];
+                            echo $destinations;
+                        ?>
                       </div>
           
                       <div class="column right">

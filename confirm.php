@@ -28,8 +28,6 @@
                     <br>
                     <input type="text" name="lastName" placeholder="Last Name"/>
                     <br>
-                    <input type="text" name="lastName" placeholder="Last Name"/>
-                    <br>
                     <input type="text" name="destination" placeholder="Destination" value=
                         <?php 
                             $destinations = $_POST['destinations'];

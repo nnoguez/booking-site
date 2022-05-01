@@ -42,9 +42,10 @@
                     <input class="button" type="submit" name="submit" value="Log In"/>
                 </form>
             <?php
+                                security_login();
+                                security_loggedIn();
                 if(isset($_POST['submit'])) {
-                    security_login();
-                    security_loggedIn();
+                    echo("<a class='a-par' href='listings.php'><button class='button'> Go to Site </button></a>");
                     
                     // ticketName();
                     // security_updateDestination();

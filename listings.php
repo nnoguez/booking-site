@@ -20,7 +20,7 @@
             <?php  
                 if(security_loggedIn()) { 
             ?>
-                <form method="POST" action="confirm.php">
+                <form method="POST" action="ticket.php">
                     <h2>Please select a destination:</h2>
                     <input type="radio" id="france" name="destinations" value="France">
                       <label for="france">France</label><br>

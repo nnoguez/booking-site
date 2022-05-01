@@ -109,7 +109,7 @@
                               <p>
                               <?php>
                               session_start();
-                                $foo = $_SESSION['foo'];
+                                $firstName = $_SESSION['firstName'];
                               ?></p>
                        
                           <b><p>From:</p></b>

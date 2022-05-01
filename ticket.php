@@ -103,7 +103,6 @@
                           <h4>║▌║█║▌│║▌║▌█</h4>
                       </div>
 
-
                       <div class="column middle">
                           <b><p>Name:</p></b>
                               <p>{$firstName, $lastName}</p>

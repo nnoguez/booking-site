@@ -43,7 +43,6 @@
                 </form>
             <?php
             } else {
-                // echo $errors['contact'];
                 echo("You are unable to view this page until you sign in.");  
                 echo("<a class='a-par' href='index.php'>Return Home</a><br>"); 
             }

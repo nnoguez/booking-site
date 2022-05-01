@@ -39,7 +39,8 @@
                 <?php 
                     if (isset($_POST['submit'])) {
                         $destinations = $_GET['destinations'];
-                        
+                        security_updateDestination();
+
                     }
                 ?>
             <?php

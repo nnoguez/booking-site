@@ -116,24 +116,22 @@
     }
 
     function database_updateDestination($username, $firstName, $lastName, $password, $destination) {
-        // Use the global connection
         global $connection;
-
-        // Open connection.
         database_connect();
-        // verify the user exists before changing any data
-        // should accept a username, original password, and new password
-        // communicate with the database server
         if($connection != null) {
-            // if the user exists, update the saved password hash in the table users
-            // UPDATE users SET password = "new password" WHERE username = $username;
-            if(database_verifyUser($username, $destination)) {
-                // $newPasswordText = $_POST['newPassword'];
-                $newPassword = password_hash($newPassword, PASSWORD_DEFAULT);
-                mysqli_query($connection, "UPDATE users SET destination = 'hi' WHERE username = '{$username}';");
+            if(isset($_POST['update'])) 
+            {
+                $destination = $_POST['destination'];
+                $query = "UPDATE `users` SET destination = '$destination' WHERE username = '{$username}';";
+                $query_run = mysqli_query($connection, $query);
+
+                if($query_run)
+                {
+                    echo "destination processing";
+                } else {
+                    echo "destination stuck";
+                }
             }
-            // Close connection.
-            // database_close();
         }
     }
 ?>

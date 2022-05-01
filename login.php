@@ -55,7 +55,6 @@
                     echo("<a class='a-par' href='listings.php'><button class='button'> Go to Site </button></a>");
                     
                     // ticketName();
-                    // security_updateDestination();
                 }
             }
             ?>

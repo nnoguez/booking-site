@@ -120,17 +120,7 @@
     }
 
     function security_updateDestination() {
-        // Validate and sanitize.
-        $result = security_sanitize();
-        // $newPassword = $_POST['newPassword'];
-        // Open connection.
-        database_connect();
-        // Use connection.
-            // Username does not exist.
-            // Add a new one.
             database_updateDestination($result["username"],  $result["firstName"], $result["lastName"], $result["password"], $result["destination"]);
-        // Close connection.
-        database_close();
     }
 
     function ticketName() {

@@ -117,9 +117,14 @@
                       </div>
           
                       <div class="column right">
-                          <b><p>Name:</b> {$firstName, $lastName}</p>
+                          <b><p>Name:</b> 
+                            <?php echo $_SESSION['firstName']; 
+                              echo (" ");
+                              echo $_SESSION['lastName']; 
+                            ?></p>
                           <b><p>From:</b> MCO</p>
-                          <b><p>To:</b> {$destination}</p>
+                          <b><p>To:</b>
+                          <?php echo($_POST["destinations"]); ?></p>
                           <b><p>Date:</b> 30APR <b>Time:</b> 10:45 </p>
                           <b><p>Flight:</b> A23 <b>Gate:</b> 17 <b>Seat:</b> 23D</p>
                       </div>  

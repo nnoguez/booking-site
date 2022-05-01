@@ -1,8 +1,9 @@
 <?php
     include("security.php");
     session_start();
-    
-    $_SESSION['firstName'] = 'naomy';
+
+    $firstName = $_POST['firstName'];
+    $_SESSION['firstName'] = $firstName;
 ?>
 <html>
     <head>

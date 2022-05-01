@@ -106,7 +106,8 @@
 
                       <div class="column middle">
                           <b><p>Name:</p></b>
-                              <p><?php echo $_SESSION['firstName'], " ", $_SESSION['lastName']; ?></p>
+                              <p><?php echo $_SESSION['firstName']; 
+                              echo $_SESSION['lastName']; ?></p>
                        
                           <b><p>From:</p></b>
                               <p>MCO</p>

@@ -1,5 +1,7 @@
 <?php
     include("security.php");
+    session_start();
+    echo $_SESSION['firstName']; 
 ?>
 <html>
     <head>

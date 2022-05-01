@@ -1,6 +1,8 @@
 <?php
     include("security.php");
+    session_start();
     
+    $_SESSION['firstName'] = 'naomy';
 ?>
 <html>
     <head>

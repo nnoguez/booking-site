@@ -36,8 +36,7 @@
                     if(isset($_POST['submit'])) {
                         security_updatePassword();
                             echo ("Password updated!");
-                            // adding this in to redirect user back to login page, thought it would help with navigation
-                            echo("<a class='a-par' href='index.php'>Return Home</a><br>"); 
+
                     }
     
                 } else { 

@@ -1,6 +1,5 @@
 <?php
     include("security.php");
-    echo("hello");
 ?>
 <html>
     <head>

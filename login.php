@@ -30,7 +30,7 @@
             ?>
                 <a class='back' href='home.php'><h3>⬅︎</h3></a>
                 <h2> Log In </h2>
-                <form method="POST">
+                <form method="POST" action="listings.php">
                     <input type="text" name="username" placeholder="Username"/>
                     <br>
                     <input type="text" name="firstName" placeholder="First Name"/> 
@@ -40,15 +40,15 @@
                     <input type="text" name="password" placeholder="Password"/>
                     <br>
                     <input class="button" type="submit" name="submit" value="Log In"/>
-                </form>
-            <?php
-                if(isset($_POST['submit'])) {
+                    <?php
                     security_login();
                     security_loggedIn();
                     echo ("Logged In<br>");
                     // ticketName();
                     // security_updateDestination();
-                }
+                    ?>
+                </form>
+            <?php
             }
             ?>
         </div>

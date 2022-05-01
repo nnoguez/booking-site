@@ -41,6 +41,8 @@
                     </form>
                 <?php
                     if(isset($_POST['submit'])) {
+                        session_start();
+                            $_SESSION['firstName'] = $firstName;
                         security_addNewUser();
                         echo("
                         Signed Up

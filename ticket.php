@@ -106,7 +106,11 @@
 
                       <div class="column middle">
                           <b><p>Name:</p></b>
-                              <p>{$firstName, $lastName}</p>
+                              <p>
+                              <?php>
+                              session_start();
+                                $foo = $_SESSION['foo'];
+                              ?></p>
                        
                           <b><p>From:</p></b>
                               <p>MCO</p>

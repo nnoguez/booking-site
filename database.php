@@ -115,24 +115,24 @@
         }
     }
 
-    // function database_updateDestination($username, $firstName, $lastName, $password, $destination) {
-    //     global $connection;
-    //     database_connect();
-    //     if($connection != null) {
-    //         if(isset($_POST['update'])) 
-    //         {
-    //             $destination = $_POST['destination'];
-    //             $query = "UPDATE `users` SET destination = '$destination' WHERE username = '{$username}';";
-    //             $query_run = mysqli_query($connection, $query);
+    function database_updateDestination($username, $firstName, $lastName, $password, $destination) {
+        global $connection;
+        database_connect();
+        if($connection != null) {
+            if(isset($_POST['update'])) 
+            {
+                $destination = $_POST['destination'];
+                $query = "UPDATE `users` SET destination = '$destination' WHERE username = '{$username}';";
+                $query_run = mysqli_query($connection, $query);
 
-    //             if($query_run)
-    //             {
-    //                 echo "destination processing";
-    //             } else {
-    //                 echo "destination stuck";
-    //             }
-    //         }
-    //     }
-    // }
+                if($query_run)
+                {
+                    echo "destination processing";
+                } else {
+                    echo "destination stuck";
+                }
+            }
+        }
+    }
 ?>
 

@@ -12,6 +12,15 @@
         </ul>
         <div class="box">
             <?php
+                    if(security_loggedIn()) { 
+                        echo("
+                        <a class='a-par' href='listings.php'><button class='button'> Go to Site </button></a>
+                        <br>
+                        <a class='a-par' href='home.php'>Return Home</a>
+                        <br>
+                        <a class='a-par' href='logout.php'>Log Out</a>
+                        "); 
+                    } else {
                     echo("
                         <div>
                             <h2>Welcome to MCO e-Ticket Booking</h2>
@@ -24,6 +33,8 @@
                             </div>
                         </div>
                     ");  
+
+                }
             ?>
         </div>
     </body>
